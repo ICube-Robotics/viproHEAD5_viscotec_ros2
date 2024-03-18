@@ -1,4 +1,4 @@
-<library path="viprohead_viscotec_ros2">
+<!-- <library path="viprohead_viscotec_ros2">
   <class name="viprohead_viscotec_ros2/ExtruderSystemWithGPIOHardware"
          type="viprohead_viscotec_ros2::ExtruderSystemWithGPIOHardware"
          base_class_type="hardware_interface::SystemInterface">
@@ -12,3 +12,23 @@
     </description>
   </class>
 </library>
+ -->
+
+ <?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>viprohead5_viscotec_ros2</name>
+  <version>0.0.1</version>
+  <description> Package for runnning ViproHEAD5 extruder from Viscotec with EL73xx and use it in ROS2</description>
+  <maintainer email="laurent.barbe@unistra.fr">Laurent Barbé</maintainer>
+  <license>Apache License 2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <exec_depend>ethercat_driver</exec_depend>
+  <exec_depend>ethercat_interface</exec_depend>
+  <exec_depend>ethercat_generic_slave</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

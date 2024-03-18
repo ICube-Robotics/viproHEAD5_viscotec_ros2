@@ -60,7 +60,7 @@ install(
   DESTINATION include/viprohead5_viscotec_ros2
 )
 install(
-  DIRECTORY extruder_description/launch extruder_description/ros2_control 
+  DIRECTORY extruder_description/ros2_control extruder_description/config
   DESTINATION share/viprohead5_viscotec_ros2
 )
 install(

@@ -3,7 +3,7 @@
 
   <link name="world"/>
 
-  <xacro:include filename="$(find description)/ros2_control/extruder.ros2_control.xacro" />
+  <xacro:include filename="$(find viprohead5_viscotec_ros2)/ros2_control/extruder.ros2_control.xacro" />
   
   <xacro:extruder/>
 </robot>

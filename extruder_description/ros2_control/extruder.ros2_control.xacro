@@ -7,7 +7,7 @@
       <hardware>
         <plugin>ethercat_driver/EthercatDriver</plugin>
         <param name="master_id">0</param>
-        <param name="control_frequency">225</param>
+        <param name="control_frequency">100</param>
       </hardware>
 
       <joint name="extruder">
@@ -25,7 +25,7 @@
           <plugin>ethercat_generic_plugins/GenericEcSlave</plugin>
           <param name="alias">0</param>
           <param name="position">1</param>
-          <param name="slave_config">$(find description)/config/bhf_el7031_config.yaml</param>
+          <param name="slave_config">$(find viprohead5_viscotec_ros2)/config/bhf_el7031_config.yaml</param>
         </ec_module>
       </joint>
     </ros2_control>
