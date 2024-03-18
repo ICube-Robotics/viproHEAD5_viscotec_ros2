@@ -1,0 +1,2 @@
+Invoking command in '/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/build/viprohead_viscotec_ros2': /usr/bin/cmake /home/barbe/ws_develop/viproHEAD5_viscotec_ros2 -DCMAKE_INSTALL_PREFIX=/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/install/viprohead_viscotec_ros2
+Invoked command in '/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/build/viprohead_viscotec_ros2' returned '1': /usr/bin/cmake /home/barbe/ws_develop/viproHEAD5_viscotec_ros2 -DCMAKE_INSTALL_PREFIX=/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/install/viprohead_viscotec_ros2
