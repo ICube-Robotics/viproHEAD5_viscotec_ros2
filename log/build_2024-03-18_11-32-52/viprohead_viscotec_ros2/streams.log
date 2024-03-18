@@ -1,0 +1,333 @@
+[0.109s] Invoking command in '/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/build/viprohead_viscotec_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/barbe/ws_moveit2/install/moveit_configs_utils:/home/barbe/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /home/barbe/ws_develop/viproHEAD5_viscotec_ros2/build/viprohead_viscotec_ros2 -- -j20 -l20
+[0.232s] [ 33%] [32mBuilding CXX object CMakeFiles/viprohead_viscotec_ros2.dir/controllers/gpio_controller.cpp.o[0m
+[3.600s] In file included from [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:15[m[K:
+[3.600s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/include/viprohead_viscotec_ros2/gpio_controller.hpp:37:3:[m[K [01;31m[Kerror: [m[K‘[01m[KROS2_CONTROL_DEMO_EXAMPLE_10_PUBLIC[m[K’ does not name a type
+[3.600s]    37 |   [01;31m[KROS2_CONTROL_DEMO_EXAMPLE_10_PUBLIC[m[K
+[3.600s]       |   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.610s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/include/viprohead_viscotec_ros2/gpio_controller.hpp:40:3:[m[K [01;31m[Kerror: [m[K‘[01m[KROS2_CONTROL_DEMO_EXAMPLE_10_PUBLIC[m[K’ does not name a type
+[3.611s]    40 |   [01;31m[KROS2_CONTROL_DEMO_EXAMPLE_10_PUBLIC[m[K
+[3.611s]       |   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.620s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/include/viprohead_viscotec_ros2/gpio_controller.hpp:43:3:[m[K [01;31m[Kerror: [m[K‘[01m[KROS2_CONTROL_DEMO_EXAMPLE_10_PUBLIC[m[K’ does not name a type
+[3.621s]    43 |   [01;31m[KROS2_CONTROL_DEMO_EXAMPLE_10_PUBLIC[m[K
+[3.621s]       |   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.631s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/include/viprohead_viscotec_ros2/gpio_controller.hpp:47:3:[m[K [01;31m[Kerror: [m[K‘[01m[KROS2_CONTROL_DEMO_EXAMPLE_10_PUBLIC[m[K’ does not name a type
+[3.631s]    47 |   [01;31m[KROS2_CONTROL_DEMO_EXAMPLE_10_PUBLIC[m[K
+[3.631s]       |   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.640s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/include/viprohead_viscotec_ros2/gpio_controller.hpp:50:3:[m[K [01;31m[Kerror: [m[K‘[01m[KROS2_CONTROL_DEMO_EXAMPLE_10_PUBLIC[m[K’ does not name a type
+[3.640s]    50 |   [01;31m[KROS2_CONTROL_DEMO_EXAMPLE_10_PUBLIC[m[K
+[3.640s]       |   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.650s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/include/viprohead_viscotec_ros2/gpio_controller.hpp:53:3:[m[K [01;31m[Kerror: [m[K‘[01m[KROS2_CONTROL_DEMO_EXAMPLE_10_PUBLIC[m[K’ does not name a type
+[3.650s]    53 |   [01;31m[KROS2_CONTROL_DEMO_EXAMPLE_10_PUBLIC[m[K
+[3.650s]       |   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.661s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/include/viprohead_viscotec_ros2/gpio_controller.hpp:56:3:[m[K [01;31m[Kerror: [m[K‘[01m[KROS2_CONTROL_DEMO_EXAMPLE_10_PUBLIC[m[K’ does not name a type
+[3.661s]    56 |   [01;31m[KROS2_CONTROL_DEMO_EXAMPLE_10_PUBLIC[m[K
+[3.661s]       |   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.743s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:21:38:[m[K [01;31m[Kerror: [m[K‘[01m[KGPIOController[m[K’ has not been declared
+[3.743s]    21 | controller_interface::CallbackReturn [01;31m[KGPIOController[m[K::on_init()
+[3.743s]       |                                      [01;31m[K^~~~~~~~~~~~~~[m[K
+[3.751s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:[m[K In function ‘[01m[Kcontroller_interface::CallbackReturn viprohead_viscotec_ros2::on_init()[m[K’:
+[3.751s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:25:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kauto_declare[m[K’ was not declared in this scope
+[3.751s]    25 |     [01;31m[Kauto_declare[m[K<std::vector<std::string>>("inputs", std::vector<std::string>());
+[3.751s]       |     [01;31m[K^~~~~~~~~~~~[m[K
+[3.752s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:25:41:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+[3.752s]    25 |     auto_declare<std::vector<std::string[01;31m[K>>[m[K("inputs", std::vector<std::string>());
+[3.752s]       |                                         [01;31m[K^~[m[K
+[3.752s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:25:44:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+[3.753s]    25 |     auto_declare<std::vector<std::string>>([01;35m[K"inputs"[m[K, std::vector<std::string>());
+[3.753s]       |                                            [01;35m[K^~~~~~~~[m[K
+[3.753s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:26:41:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+[3.753s]    26 |     auto_declare<std::vector<std::string[01;31m[K>>[m[K("outputs", std::vector<std::string>());
+[3.753s]       |                                         [01;31m[K^~[m[K
+[3.753s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:26:44:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+[3.753s]    26 |     auto_declare<std::vector<std::string>>([01;35m[K"outputs"[m[K, std::vector<std::string>());
+[3.753s]       |                                            [01;35m[K^~~~~~~~~[m[K
+[3.753s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:[m[K At global scope:
+[3.754s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:36:46:[m[K [01;31m[Kerror: [m[K‘[01m[KGPIOController[m[K’ has not been declared
+[3.754s]    36 | controller_interface::InterfaceConfiguration [01;31m[KGPIOController[m[K::command_interface_configuration() const
+[3.754s]       |                                              [01;31m[K^~~~~~~~~~~~~~[m[K
+[3.754s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:36:96:[m[K [01;31m[Kerror: [m[Knon-member function ‘[01m[Kcontroller_interface::InterfaceConfiguration viprohead_viscotec_ros2::command_interface_configuration()[m[K’ cannot have cv-qualifier
+[3.754s]    36 | controller_interface::InterfaceConfiguration GPIOController::command_interface_configuration() [01;31m[Kconst[m[K
+[3.754s]       |                                                                                                [01;31m[K^~~~~[m[K
+[3.761s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:[m[K In function ‘[01m[Kcontroller_interface::InterfaceConfiguration viprohead_viscotec_ros2::command_interface_configuration()[m[K’:
+[3.761s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:40:18:[m[K [01;31m[Kerror: [m[K‘[01m[Koutputs_[m[K’ was not declared in this scope
+[3.761s]    40 |   config.names = [01;31m[Koutputs_[m[K;
+[3.762s]       |                  [01;31m[K^~~~~~~~[m[K
+[3.762s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:[m[K At global scope:
+[3.762s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:45:46:[m[K [01;31m[Kerror: [m[K‘[01m[KGPIOController[m[K’ has not been declared
+[3.762s]    45 | controller_interface::InterfaceConfiguration [01;31m[KGPIOController[m[K::state_interface_configuration() const
+[3.762s]       |                                              [01;31m[K^~~~~~~~~~~~~~[m[K
+[3.762s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:45:94:[m[K [01;31m[Kerror: [m[Knon-member function ‘[01m[Kcontroller_interface::InterfaceConfiguration viprohead_viscotec_ros2::state_interface_configuration()[m[K’ cannot have cv-qualifier
+[3.763s]    45 | controller_interface::InterfaceConfiguration GPIOController::state_interface_configuration() [01;31m[Kconst[m[K
+[3.763s]       |                                                                                              [01;31m[K^~~~~[m[K
+[3.769s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:[m[K In function ‘[01m[Kcontroller_interface::InterfaceConfiguration viprohead_viscotec_ros2::state_interface_configuration()[m[K’:
+[3.770s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:49:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kinputs_[m[K’ was not declared in this scope; did you mean ‘[01m[Kputs[m[K’?
+[3.770s]    49 |   config.names = [01;31m[Kinputs_[m[K;
+[3.770s]       |                  [01;31m[K^~~~~~~[m[K
+[3.770s]       |                  [32m[Kputs[m[K
+[3.770s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:[m[K At global scope:
+[3.771s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:54:35:[m[K [01;31m[Kerror: [m[K‘[01m[KGPIOController[m[K’ has not been declared
+[3.771s]    54 | controller_interface::return_type [01;31m[KGPIOController[m[K::update(
+[3.771s]       |                                   [01;31m[K^~~~~~~~~~~~~~[m[K
+[3.782s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:[m[K In function ‘[01m[Kcontroller_interface::return_type viprohead_viscotec_ros2::update(const rclcpp::Time&, const rclcpp::Duration&)[m[K’:
+[3.782s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:58:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kstate_interfaces_[m[K’ was not declared in this scope; did you mean ‘[01m[Krcl_interfaces[m[K’?
+[3.783s]    58 |   for (size_t i = 0; i < [01;31m[Kstate_interfaces_[m[K.size(); i++)
+[3.783s]       |                          [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[3.783s]       |                          [32m[Krcl_interfaces[m[K
+[3.790s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[3.790s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[3.791s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[3.791s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[3.791s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[3.791s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[3.791s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[3.791s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[3.792s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[3.792s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[3.792s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28[m[K,
+[3.792s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[3.792s]                  from [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/include/viprohead_viscotec_ros2/gpio_controller.hpp:26[m[K,
+[3.792s]                  from [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:15[m[K:
+[3.792s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:61:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kget_node[m[K’ was not declared in this scope
+[3.793s]    61 |       [01;31m[Kget_node[m[K()->get_logger(), "%s: (%f)", state_interfaces_[i].get_name().c_str(),
+[3.793s]       |       [01;31m[K^~~~~~~~[m[K
+[3.793s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:60:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.793s]    60 |     [01;31m[KRCLCPP_DEBUG[m[K(
+[3.793s]       |     [01;31m[K^~~~~~~~~~~~[m[K
+[3.793s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:60:5:[m[K [01;31m[Kerror: [m[K‘[01m[K<declaration error>[m[K’ is not a template [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[3.794s]    60 |     [01;31m[KRCLCPP_DEBUG[m[K(
+[3.794s]       |     [01;31m[K^~~~~~~~~~~~[m[K
+[3.794s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:60:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.794s]    60 |     [01;31m[KRCLCPP_DEBUG[m[K(
+[3.794s]       |     [01;31m[K^~~~~~~~~~~~[m[K
+[3.794s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:60:5:[m[K [01;31m[Kerror: [m[K‘[01m[K<declaration error>[m[K’ is not a template [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[3.795s]    60 |     [01;31m[KRCLCPP_DEBUG[m[K(
+[3.795s]       |     [01;31m[K^~~~~~~~~~~~[m[K
+[3.795s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:60:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.795s]    60 |     [01;31m[KRCLCPP_DEBUG[m[K(
+[3.795s]       |     [01;31m[K^~~~~~~~~~~~[m[K
+[3.798s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:63:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kgpio_msg_[m[K’ was not declared in this scope
+[3.798s]    63 |     [01;31m[Kgpio_msg_[m[K.values.at(i) = static_cast<float>(state_interfaces_.at(i).get_value());
+[3.798s]       |     [01;31m[K^~~~~~~~~[m[K
+[3.807s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:65:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kgpio_publisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+[3.807s]    65 |   [01;31m[Kgpio_publisher_[m[K->publish(gpio_msg_);
+[3.807s]       |   [01;31m[K^~~~~~~~~~~~~~~[m[K
+[3.807s]       |   [32m[Krmw_publisher_t[m[K
+[3.813s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:65:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kgpio_msg_[m[K’ was not declared in this scope
+[3.814s]    65 |   gpio_publisher_->publish([01;31m[Kgpio_msg_[m[K);
+[3.814s]       |                            [01;31m[K^~~~~~~~~[m[K
+[3.822s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:68:8:[m[K [01;31m[Kerror: [m[K‘[01m[Koutput_cmd_ptr_[m[K’ was not declared in this scope
+[3.823s]    68 |   if (![01;31m[Koutput_cmd_ptr_[m[K)
+[3.823s]       |        [01;31m[K^~~~~~~~~~~~~~~[m[K
+[3.832s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:73:7:[m[K [01;31m[Kerror: [m[K‘[01m[Koutput_cmd_ptr_[m[K’ was not declared in this scope
+[3.832s]    73 |   if ([01;31m[Koutput_cmd_ptr_[m[K->data.size() != command_interfaces_.size())
+[3.833s]       |       [01;31m[K^~~~~~~~~~~~~~~[m[K
+[3.844s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:73:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kcommand_interfaces_[m[K’ was not declared in this scope
+[3.845s]    73 |   if (output_cmd_ptr_->data.size() != [01;31m[Kcommand_interfaces_[m[K.size())
+[3.845s]       |                                       [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[3.852s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[3.852s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[3.852s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[3.852s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[3.853s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[3.853s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[3.853s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[3.853s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[3.853s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[3.853s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[3.854s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28[m[K,
+[3.854s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[3.854s]                  from [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/include/viprohead_viscotec_ros2/gpio_controller.hpp:26[m[K,
+[3.854s]                  from [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:15[m[K:
+[3.855s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:76:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kget_node[m[K’ was not declared in this scope
+[3.855s]    76 |       [01;31m[Kget_node[m[K()->get_logger(), *(get_node()->get_clock()), 1000,
+[3.855s]       |       [01;31m[K^~~~~~~~[m[K
+[3.855s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:75:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.855s]    75 |     [01;31m[KRCLCPP_ERROR_THROTTLE[m[K(
+[3.855s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[3.855s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:75:5:[m[K [01;31m[Kerror: [m[K‘[01m[K<declaration error>[m[K’ is not a template [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[3.855s]    75 |     [01;31m[KRCLCPP_ERROR_THROTTLE[m[K(
+[3.856s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[3.856s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:75:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.856s]    75 |     [01;31m[KRCLCPP_ERROR_THROTTLE[m[K(
+[3.856s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[3.856s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:75:5:[m[K [01;31m[Kerror: [m[K‘[01m[K<declaration error>[m[K’ is not a template [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[3.856s]    75 |     [01;31m[KRCLCPP_ERROR_THROTTLE[m[K(
+[3.856s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[3.856s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:75:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.856s]    75 |     [01;31m[KRCLCPP_ERROR_THROTTLE[m[K(
+[3.856s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[3.860s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:[m[K In lambda function:
+[3.860s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:75:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kc[m[K’ was not declared in this scope
+[3.861s]    75 |     [01;31m[KRCLCPP_ERROR_THROTTLE[m[K(
+[3.861s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[3.874s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:[m[K In function ‘[01m[Kcontroller_interface::return_type viprohead_viscotec_ros2::update(const rclcpp::Time&, const rclcpp::Duration&)[m[K’:
+[3.874s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:82:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kcommand_interfaces_[m[K’ was not declared in this scope
+[3.874s]    82 |   for (size_t i = 0; i < [01;31m[Kcommand_interfaces_[m[K.size(); i++)
+[3.874s]       |                          [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[3.884s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:84:38:[m[K [01;31m[Kerror: [m[K‘[01m[Koutput_cmd_ptr_[m[K’ was not declared in this scope
+[3.884s]    84 |     command_interfaces_[i].set_value([01;31m[Koutput_cmd_ptr_[m[K->data[i]);
+[3.884s]       |                                      [01;31m[K^~~~~~~~~~~~~~~[m[K
+[3.891s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[3.891s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[3.892s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[3.892s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[3.892s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[3.892s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[3.892s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[3.892s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[3.892s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[3.892s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[3.892s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28[m[K,
+[3.892s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[3.893s]                  from [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/include/viprohead_viscotec_ros2/gpio_controller.hpp:26[m[K,
+[3.893s]                  from [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:15[m[K:
+[3.893s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:86:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kget_node[m[K’ was not declared in this scope
+[3.893s]    86 |       [01;31m[Kget_node[m[K()->get_logger(), "%s: (%f)", command_interfaces_[i].get_name().c_str(),
+[3.893s]       |       [01;31m[K^~~~~~~~[m[K
+[3.893s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:85:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.893s]    85 |     [01;31m[KRCLCPP_DEBUG[m[K(
+[3.893s]       |     [01;31m[K^~~~~~~~~~~~[m[K
+[3.893s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:85:5:[m[K [01;31m[Kerror: [m[K‘[01m[K<declaration error>[m[K’ is not a template [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[3.893s]    85 |     [01;31m[KRCLCPP_DEBUG[m[K(
+[3.893s]       |     [01;31m[K^~~~~~~~~~~~[m[K
+[3.894s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:85:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.894s]    85 |     [01;31m[KRCLCPP_DEBUG[m[K(
+[3.894s]       |     [01;31m[K^~~~~~~~~~~~[m[K
+[3.894s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:85:5:[m[K [01;31m[Kerror: [m[K‘[01m[K<declaration error>[m[K’ is not a template [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[3.894s]    85 |     [01;31m[KRCLCPP_DEBUG[m[K(
+[3.894s]       |     [01;31m[K^~~~~~~~~~~~[m[K
+[3.894s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:85:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.894s]    85 |     [01;31m[KRCLCPP_DEBUG[m[K(
+[3.894s]       |     [01;31m[K^~~~~~~~~~~~[m[K
+[3.894s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:[m[K At global scope:
+[3.894s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:93:38:[m[K [01;31m[Kerror: [m[K‘[01m[KGPIOController[m[K’ has not been declared
+[3.894s]    93 | controller_interface::CallbackReturn [01;31m[KGPIOController[m[K::on_configure(
+[3.895s]       |                                      [01;31m[K^~~~~~~~~~~~~~[m[K
+[3.899s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:[m[K In function ‘[01m[Kcontroller_interface::CallbackReturn viprohead_viscotec_ros2::on_configure(const rclcpp_lifecycle::State&)[m[K’:
+[3.899s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:98:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kinputs_[m[K’ was not declared in this scope; did you mean ‘[01m[Kputs[m[K’?
+[3.899s]    98 |     [01;31m[Kinputs_[m[K = get_node()->get_parameter("inputs").as_string_array();
+[3.899s]       |     [01;31m[K^~~~~~~[m[K
+[3.899s]       |     [32m[Kputs[m[K
+[3.906s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:98:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kget_node[m[K’ was not declared in this scope
+[3.906s]    98 |     inputs_ = [01;31m[Kget_node[m[K()->get_parameter("inputs").as_string_array();
+[3.906s]       |               [01;31m[K^~~~~~~~[m[K
+[3.913s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:99:5:[m[K [01;31m[Kerror: [m[K‘[01m[Koutputs_[m[K’ was not declared in this scope
+[3.913s]    99 |     [01;31m[Koutputs_[m[K = get_node()->get_parameter("outputs").as_string_array();
+[3.913s]       |     [01;31m[K^~~~~~~~[m[K
+[3.920s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:101:5:[m[K [01;31m[Kerror: [m[K‘[01m[KinitMsgs[m[K’ was not declared in this scope
+[3.920s]   101 |     [01;31m[KinitMsgs[m[K();
+[3.920s]       |     [01;31m[K^~~~~~~~[m[K
+[3.928s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:104:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kgpio_publisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+[3.928s]   104 |     [01;31m[Kgpio_publisher_[m[K = get_node()->create_publisher<control_msgs::msg::InterfaceValue>(
+[3.928s]       |     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[3.928s]       |     [32m[Krmw_publisher_t[m[K
+[3.928s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:104:85:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+[3.929s]   104 |     gpio_publisher_ = get_node()->create_publisher<control_msgs::msg::InterfaceValue[01;31m[K>[m[K(
+[3.929s]       |                                                                                     [01;31m[K^[m[K
+[3.929s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:105:7:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+[3.929s]   105 |       [01;35m[K"~/inputs"[m[K, rclcpp::SystemDefaultsQoS());
+[3.929s]       |       [01;35m[K^~~~~~~~~~[m[K
+[3.939s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:108:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscription_command_[m[K’ was not declared in this scope
+[3.939s]   108 |     [01;31m[Ksubscription_command_[m[K = get_node()->create_subscription<CmdType>(
+[3.939s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[3.940s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:108:61:[m[K [01;31m[Kerror: [m[K‘[01m[KCmdType[m[K’ was not declared in this scope; did you mean ‘[01m[Kros2_control_demo_example_10::CmdType[m[K’?
+[3.940s]   108 |     subscription_command_ = get_node()->create_subscription<[01;31m[KCmdType[m[K>(
+[3.940s]       |                                                             [01;31m[K^~~~~~~[m[K
+[3.940s]       |                                                             [32m[Kros2_control_demo_example_10::CmdType[m[K
+[3.940s] In file included from [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:15[m[K:
+[3.940s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/include/viprohead_viscotec_ros2/gpio_controller.hpp:30:7:[m[K [01;36m[Knote: [m[K‘[01m[Kros2_control_demo_example_10::CmdType[m[K’ declared here
+[3.940s]    30 | using [01;36m[KCmdType[m[K = std_msgs::msg::Float64MultiArray;
+[3.941s]       |       [01;36m[K^~~~~~~[m[K
+[3.941s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:109:7:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+[3.941s]   109 |       [01;35m[K"~/commands"[m[K, rclcpp::SystemDefaultsQoS(),
+[3.941s]       |       [01;35m[K^~~~~~~~~~~~[m[K
+[3.941s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:110:8:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[3.941s]   110 |       [[01;31m[Kthis[m[K](const CmdType::SharedPtr msg) { output_cmd_ptr_ = msg; });
+[3.941s]       |        [01;31m[K^~~~[m[K
+[3.942s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:110:20:[m[K [01;31m[Kerror: [m[K‘[01m[KCmdType[m[K’ does not name a type
+[3.942s]   110 |       [this](const [01;31m[KCmdType[m[K::SharedPtr msg) { output_cmd_ptr_ = msg; });
+[3.942s]       |                    [01;31m[K^~~~~~~[m[K
+[3.942s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:[m[K In lambda function:
+[3.943s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:110:71:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[K;[m[K’ token
+[3.943s]   110 |       [this](const CmdType::SharedPtr msg) { output_cmd_ptr_ = msg; })[01;31m[K;[m[K
+[3.943s]       |                                                                       [01;31m[K^[m[K
+[3.943s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:[m[K In function ‘[01m[Kcontroller_interface::CallbackReturn viprohead_viscotec_ros2::on_configure(const rclcpp_lifecycle::State&)[m[K’:
+[3.943s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:110:71:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K;[m[K’ token
+[3.943s]   110 |       [this](const CmdType::SharedPtr msg) { output_cmd_ptr_ = msg; })[01;31m[K;[m[K
+[3.943s]       |                                                                       [01;31m[K^[m[K
+[3.944s]       |                                                                       [32m[K)[m[K
+[3.944s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:108:69:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+[3.944s]   108 |     subscription_command_ = get_node()->create_subscription<CmdType>[01;36m[K([m[K
+[3.944s]       |                                                                     [01;36m[K^[m[K
+[3.944s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:114:12:[m[K [01;31m[Kerror: [m[K‘[01m[KLifecycleNodeInterface[m[K’ has not been declared
+[3.944s]   114 |     return [01;31m[KLifecycleNodeInterface[m[K::CallbackReturn::ERROR;
+[3.945s]       |            [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.945s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:116:10:[m[K [01;31m[Kerror: [m[K‘[01m[KLifecycleNodeInterface[m[K’ has not been declared
+[3.945s]   116 |   return [01;31m[KLifecycleNodeInterface[m[K::CallbackReturn::SUCCESS;
+[3.945s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.946s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:[m[K At global scope:
+[3.946s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:119:6:[m[K [01;31m[Kerror: [m[K‘[01m[KGPIOController[m[K’ has not been declared
+[3.946s]   119 | void [01;31m[KGPIOController[m[K::initMsgs()
+[3.946s]       |      [01;31m[K^~~~~~~~~~~~~~[m[K
+[3.949s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:[m[K In function ‘[01m[Kvoid viprohead_viscotec_ros2::initMsgs()[m[K’:
+[3.949s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:121:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kgpio_msg_[m[K’ was not declared in this scope
+[3.949s]   121 |   [01;31m[Kgpio_msg_[m[K.interface_names = inputs_;
+[3.949s]       |   [01;31m[K^~~~~~~~~[m[K
+[3.955s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:121:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kinputs_[m[K’ was not declared in this scope; did you mean ‘[01m[Kputs[m[K’?
+[3.956s]   121 |   gpio_msg_.interface_names = [01;31m[Kinputs_[m[K;
+[3.956s]       |                               [01;31m[K^~~~~~~[m[K
+[3.956s]       |                               [32m[Kputs[m[K
+[3.956s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:[m[K At global scope:
+[3.956s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:125:38:[m[K [01;31m[Kerror: [m[K‘[01m[KGPIOController[m[K’ has not been declared
+[3.956s]   125 | controller_interface::CallbackReturn [01;31m[KGPIOController[m[K::on_activate(
+[3.957s]       |                                      [01;31m[K^~~~~~~~~~~~~~[m[K
+[3.957s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:[m[K In function ‘[01m[Kcontroller_interface::CallbackReturn viprohead_viscotec_ros2::on_activate(const rclcpp_lifecycle::State&)[m[K’:
+[3.957s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:128:10:[m[K [01;31m[Kerror: [m[K‘[01m[KLifecycleNodeInterface[m[K’ has not been declared
+[3.957s]   128 |   return [01;31m[KLifecycleNodeInterface[m[K::CallbackReturn::SUCCESS;
+[3.957s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.957s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:[m[K At global scope:
+[3.957s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:131:38:[m[K [01;31m[Kerror: [m[K‘[01m[KGPIOController[m[K’ has not been declared
+[3.958s]   131 | controller_interface::CallbackReturn [01;31m[KGPIOController[m[K::on_deactivate(
+[3.958s]       |                                      [01;31m[K^~~~~~~~~~~~~~[m[K
+[3.964s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:[m[K In function ‘[01m[Kcontroller_interface::CallbackReturn viprohead_viscotec_ros2::on_deactivate(const rclcpp_lifecycle::State&)[m[K’:
+[3.964s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:137:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kgpio_publisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+[3.964s]   137 |     [01;31m[Kgpio_publisher_[m[K.reset();
+[3.965s]       |     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[3.965s]       |     [32m[Krmw_publisher_t[m[K
+[3.965s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:141:12:[m[K [01;31m[Kerror: [m[K‘[01m[KLifecycleNodeInterface[m[K’ has not been declared
+[3.965s]   141 |     return [01;31m[KLifecycleNodeInterface[m[K::CallbackReturn::ERROR;
+[3.965s]       |            [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.965s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:143:10:[m[K [01;31m[Kerror: [m[K‘[01m[KLifecycleNodeInterface[m[K’ has not been declared
+[3.965s]   143 |   return [01;31m[KLifecycleNodeInterface[m[K::CallbackReturn::SUCCESS;
+[3.966s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.983s] In file included from [01m[K/opt/ros/humble/include/class_loader/class_loader/class_loader.hpp:56[m[K,
+[3.984s]                  from [01m[K/opt/ros/humble/include/pluginlib/pluginlib/class_list_macros.hpp:40[m[K,
+[3.984s]                  from [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:148[m[K:
+[3.984s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:[m[K At global scope:
+[3.984s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:151:28:[m[K [01;31m[Kerror: [m[K‘[01m[KGPIOController[m[K’ in namespace ‘[01m[Kviprohead_viscotec_ros2[m[K’ does not name a type
+[3.984s]   151 |   viprohead_viscotec_ros2::[01;31m[KGPIOController[m[K, controller_interface::ControllerInterface)
+[3.984s]       |                            [01;31m[K^~~~~~~~~~~~~~[m[K
+[4.001s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:[m[K In constructor ‘[01m[K{anonymous}::ProxyExec0::ProxyExec0()[m[K’:
+[4.001s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:150:1:[m[K [01;31m[Kerror: [m[K‘[01m[K_derived[m[K’ was not declared in this scope
+[4.001s]   150 | [01;31m[KPLUGINLIB_EXPORT_CLASS[m[K(
+[4.001s]       | [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.001s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:150:1:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KregisterPlugin<<expression error>, {anonymous}::ProxyExec0::_base>(const char [40], const char [42])[m[K’
+[4.001s]   150 | [01;31m[KPLUGINLIB_EXPORT_CLASS[m[K(
+[4.001s]       | [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.010s] In file included from [01m[K/opt/ros/humble/include/class_loader/class_loader/class_loader.hpp:55[m[K,
+[4.010s]                  from [01m[K/opt/ros/humble/include/pluginlib/pluginlib/class_list_macros.hpp:40[m[K,
+[4.010s]                  from [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:148[m[K:
+[4.010s] [01m[K/opt/ros/humble/include/class_loader/class_loader/class_loader_core.hpp:210:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class Derived, class Base> void class_loader::impl::registerPlugin(const string&, const string&)[m[K’
+[4.010s]   210 | void [01;36m[KregisterPlugin[m[K(const std::string & class_name, const std::string & base_class_name)
+[4.010s]       |      [01;36m[K^~~~~~~~~~~~~~[m[K
+[4.011s] [01m[K/opt/ros/humble/include/class_loader/class_loader/class_loader_core.hpp:210:6:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.011s] In file included from [01m[K/opt/ros/humble/include/class_loader/class_loader/class_loader.hpp:56[m[K,
+[4.011s]                  from [01m[K/opt/ros/humble/include/pluginlib/pluginlib/class_list_macros.hpp:40[m[K,
+[4.011s]                  from [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:148[m[K:
+[4.011s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:150:1:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[4.011s]   150 | [01;31m[KPLUGINLIB_EXPORT_CLASS[m[K(
+[4.011s]       | [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.651s] gmake[2]: *** [CMakeFiles/viprohead_viscotec_ros2.dir/build.make:90 : CMakeFiles/viprohead_viscotec_ros2.dir/controllers/gpio_controller.cpp.o] Erreur 1
+[4.651s] gmake[1]: *** [CMakeFiles/Makefile2:137 : CMakeFiles/viprohead_viscotec_ros2.dir/all] Erreur 2
+[4.651s] gmake: *** [Makefile:146 : all] Erreur 2
+[4.656s] Invoked command in '/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/build/viprohead_viscotec_ros2' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/barbe/ws_moveit2/install/moveit_configs_utils:/home/barbe/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /home/barbe/ws_develop/viproHEAD5_viscotec_ros2/build/viprohead_viscotec_ros2 -- -j20 -l20

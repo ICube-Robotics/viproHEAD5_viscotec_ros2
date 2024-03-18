@@ -1,0 +1,56 @@
+[0.113s] Invoking command in '/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/build/viprohead_viscotec_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/barbe/ws_moveit2/install/moveit_configs_utils:/home/barbe/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /home/barbe/ws_develop/viproHEAD5_viscotec_ros2/build/viprohead_viscotec_ros2 -- -j20 -l20
+[0.225s] [35m[1mConsolidate compiler generated dependencies of target viprohead_viscotec_ros2[0m
+[0.280s] [ 33%] [32mBuilding CXX object CMakeFiles/viprohead_viscotec_ros2.dir/controllers/gpio_controller.cpp.o[0m
+[11.084s] [ 66%] [32m[1mLinking CXX shared library libviprohead_viscotec_ros2.so[0m
+[11.916s] [100%] Built target viprohead_viscotec_ros2
+[11.949s] Invoked command in '/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/build/viprohead_viscotec_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/barbe/ws_moveit2/install/moveit_configs_utils:/home/barbe/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /home/barbe/ws_develop/viproHEAD5_viscotec_ros2/build/viprohead_viscotec_ros2 -- -j20 -l20
+[12.053s] Invoking command in '/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/build/viprohead_viscotec_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/barbe/ws_moveit2/install/moveit_configs_utils:/home/barbe/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --install /home/barbe/ws_develop/viproHEAD5_viscotec_ros2/build/viprohead_viscotec_ros2
+[12.067s] -- Install configuration: ""
+[12.067s] -- Installing: /home/barbe/ws_develop/viproHEAD5_viscotec_ros2/install/viprohead_viscotec_ros2/share/viprohead_viscotec_ros2/viprohead_viscotec_ros2.xml
+[12.068s] -- Up-to-date: /home/barbe/ws_develop/viproHEAD5_viscotec_ros2/install/viprohead_viscotec_ros2/share/viprohead_viscotec_ros2/viprohead_viscotec_ros2.xml
+[12.068s] -- Installing: /home/barbe/ws_develop/viproHEAD5_viscotec_ros2/install/viprohead_viscotec_ros2/include/viprohead_viscotec_ros2
+[12.068s] -- Installing: /home/barbe/ws_develop/viproHEAD5_viscotec_ros2/install/viprohead_viscotec_ros2/include/viprohead_viscotec_ros2/viprohead_viscotec_ros2
+[12.068s] -- Installing: /home/barbe/ws_develop/viproHEAD5_viscotec_ros2/install/viprohead_viscotec_ros2/include/viprohead_viscotec_ros2/viprohead_viscotec_ros2/extruder.hpp
+[12.068s] -- Installing: /home/barbe/ws_develop/viproHEAD5_viscotec_ros2/install/viprohead_viscotec_ros2/include/viprohead_viscotec_ros2/viprohead_viscotec_ros2/visibility_control.h
+[12.068s] -- Up-to-date: /home/barbe/ws_develop/viproHEAD5_viscotec_ros2/install/viprohead_viscotec_ros2/include/viprohead_viscotec_ros2
+[12.069s] -- Up-to-date: /home/barbe/ws_develop/viproHEAD5_viscotec_ros2/install/viprohead_viscotec_ros2/include/viprohead_viscotec_ros2/viprohead_viscotec_ros2
+[12.069s] -- Installing: /home/barbe/ws_develop/viproHEAD5_viscotec_ros2/install/viprohead_viscotec_ros2/include/viprohead_viscotec_ros2/viprohead_viscotec_ros2/gpio_controller.hpp
+[12.069s] -- Installing: /home/barbe/ws_develop/viproHEAD5_viscotec_ros2/install/viprohead_viscotec_ros2/share/viprohead_viscotec_ros2/launch
+[12.069s] -- Installing: /home/barbe/ws_develop/viproHEAD5_viscotec_ros2/install/viprohead_viscotec_ros2/share/viprohead_viscotec_ros2/launch/extruder.launch.py
+[12.069s] -- Installing: /home/barbe/ws_develop/viproHEAD5_viscotec_ros2/install/viprohead_viscotec_ros2/share/viprohead_viscotec_ros2/ros2_control
+[12.069s] -- Installing: /home/barbe/ws_develop/viproHEAD5_viscotec_ros2/install/viprohead_viscotec_ros2/share/viprohead_viscotec_ros2/ros2_control/extruder.ros2_control.xacro
+[12.069s] -- Installing: /home/barbe/ws_develop/viproHEAD5_viscotec_ros2/install/viprohead_viscotec_ros2/share/viprohead_viscotec_ros2/ros2_control/extruder.ros2_control.xacro.copy
+[12.069s] -- Installing: /home/barbe/ws_develop/viproHEAD5_viscotec_ros2/install/viprohead_viscotec_ros2/share/viprohead_viscotec_ros2/urdf
+[12.069s] -- Installing: /home/barbe/ws_develop/viproHEAD5_viscotec_ros2/install/viprohead_viscotec_ros2/share/viprohead_viscotec_ros2/urdf/extruder.urdf.xacro
+[12.070s] -- Up-to-date: /home/barbe/ws_develop/viproHEAD5_viscotec_ros2/install/viprohead_viscotec_ros2/share/viprohead_viscotec_ros2/launch
+[12.070s] -- Installing: /home/barbe/ws_develop/viproHEAD5_viscotec_ros2/install/viprohead_viscotec_ros2/share/viprohead_viscotec_ros2/launch/test_forward_position_controller.launch.py
+[12.070s] -- Up-to-date: /home/barbe/ws_develop/viproHEAD5_viscotec_ros2/install/viprohead_viscotec_ros2/share/viprohead_viscotec_ros2/launch/extruder.launch.py
+[12.070s] -- Installing: /home/barbe/ws_develop/viproHEAD5_viscotec_ros2/install/viprohead_viscotec_ros2/share/viprohead_viscotec_ros2/config
+[12.070s] -- Installing: /home/barbe/ws_develop/viproHEAD5_viscotec_ros2/install/viprohead_viscotec_ros2/share/viprohead_viscotec_ros2/config/extruder_forward_position_publisher.yaml
+[12.070s] -- Installing: /home/barbe/ws_develop/viproHEAD5_viscotec_ros2/install/viprohead_viscotec_ros2/share/viprohead_viscotec_ros2/config/extruder_controllers.yaml
+[12.070s] -- Installing: /home/barbe/ws_develop/viproHEAD5_viscotec_ros2/install/viprohead_viscotec_ros2/lib/libviprohead_viscotec_ros2.so
+[12.081s] -- Set runtime path of "/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/install/viprohead_viscotec_ros2/lib/libviprohead_viscotec_ros2.so" to ""
+[12.081s] -- Installing: /home/barbe/ws_develop/viproHEAD5_viscotec_ros2/install/viprohead_viscotec_ros2/share/viprohead_viscotec_ros2/environment/library_path.sh
+[12.082s] -- Installing: /home/barbe/ws_develop/viproHEAD5_viscotec_ros2/install/viprohead_viscotec_ros2/share/viprohead_viscotec_ros2/environment/library_path.dsv
+[12.082s] -- Installing: /home/barbe/ws_develop/viproHEAD5_viscotec_ros2/install/viprohead_viscotec_ros2/share/ament_index/resource_index/package_run_dependencies/viprohead_viscotec_ros2
+[12.082s] -- Installing: /home/barbe/ws_develop/viproHEAD5_viscotec_ros2/install/viprohead_viscotec_ros2/share/ament_index/resource_index/parent_prefix_path/viprohead_viscotec_ros2
+[12.083s] -- Installing: /home/barbe/ws_develop/viproHEAD5_viscotec_ros2/install/viprohead_viscotec_ros2/share/viprohead_viscotec_ros2/environment/ament_prefix_path.sh
+[12.083s] -- Installing: /home/barbe/ws_develop/viproHEAD5_viscotec_ros2/install/viprohead_viscotec_ros2/share/viprohead_viscotec_ros2/environment/ament_prefix_path.dsv
+[12.083s] -- Installing: /home/barbe/ws_develop/viproHEAD5_viscotec_ros2/install/viprohead_viscotec_ros2/share/viprohead_viscotec_ros2/environment/path.sh
+[12.084s] -- Installing: /home/barbe/ws_develop/viproHEAD5_viscotec_ros2/install/viprohead_viscotec_ros2/share/viprohead_viscotec_ros2/environment/path.dsv
+[12.084s] -- Installing: /home/barbe/ws_develop/viproHEAD5_viscotec_ros2/install/viprohead_viscotec_ros2/share/viprohead_viscotec_ros2/local_setup.bash
+[12.084s] -- Installing: /home/barbe/ws_develop/viproHEAD5_viscotec_ros2/install/viprohead_viscotec_ros2/share/viprohead_viscotec_ros2/local_setup.sh
+[12.084s] -- Installing: /home/barbe/ws_develop/viproHEAD5_viscotec_ros2/install/viprohead_viscotec_ros2/share/viprohead_viscotec_ros2/local_setup.zsh
+[12.085s] -- Installing: /home/barbe/ws_develop/viproHEAD5_viscotec_ros2/install/viprohead_viscotec_ros2/share/viprohead_viscotec_ros2/local_setup.dsv
+[12.085s] -- Installing: /home/barbe/ws_develop/viproHEAD5_viscotec_ros2/install/viprohead_viscotec_ros2/share/viprohead_viscotec_ros2/package.dsv
+[12.085s] -- Installing: /home/barbe/ws_develop/viproHEAD5_viscotec_ros2/install/viprohead_viscotec_ros2/share/ament_index/resource_index/packages/viprohead_viscotec_ros2
+[12.085s] -- Installing: /home/barbe/ws_develop/viproHEAD5_viscotec_ros2/install/viprohead_viscotec_ros2/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/viprohead_viscotec_ros2
+[12.085s] -- Installing: /home/barbe/ws_develop/viproHEAD5_viscotec_ros2/install/viprohead_viscotec_ros2/share/ament_index/resource_index/controller_interface__pluginlib__plugin/viprohead_viscotec_ros2
+[12.086s] -- Installing: /home/barbe/ws_develop/viproHEAD5_viscotec_ros2/install/viprohead_viscotec_ros2/share/viprohead_viscotec_ros2/cmake/viprohead_viscotec_ros2Export.cmake
+[12.086s] -- Installing: /home/barbe/ws_develop/viproHEAD5_viscotec_ros2/install/viprohead_viscotec_ros2/share/viprohead_viscotec_ros2/cmake/viprohead_viscotec_ros2Export-noconfig.cmake
+[12.086s] -- Installing: /home/barbe/ws_develop/viproHEAD5_viscotec_ros2/install/viprohead_viscotec_ros2/share/viprohead_viscotec_ros2/cmake/ament_cmake_export_targets-extras.cmake
+[12.086s] -- Installing: /home/barbe/ws_develop/viproHEAD5_viscotec_ros2/install/viprohead_viscotec_ros2/share/viprohead_viscotec_ros2/cmake/ament_cmake_export_dependencies-extras.cmake
+[12.086s] -- Installing: /home/barbe/ws_develop/viproHEAD5_viscotec_ros2/install/viprohead_viscotec_ros2/share/viprohead_viscotec_ros2/cmake/viprohead_viscotec_ros2Config.cmake
+[12.087s] -- Installing: /home/barbe/ws_develop/viproHEAD5_viscotec_ros2/install/viprohead_viscotec_ros2/share/viprohead_viscotec_ros2/cmake/viprohead_viscotec_ros2Config-version.cmake
+[12.087s] -- Installing: /home/barbe/ws_develop/viproHEAD5_viscotec_ros2/install/viprohead_viscotec_ros2/share/viprohead_viscotec_ros2/package.xml
+[12.091s] Invoked command in '/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/build/viprohead_viscotec_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/barbe/ws_moveit2/install/moveit_configs_utils:/home/barbe/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --install /home/barbe/ws_develop/viproHEAD5_viscotec_ros2/build/viprohead_viscotec_ros2

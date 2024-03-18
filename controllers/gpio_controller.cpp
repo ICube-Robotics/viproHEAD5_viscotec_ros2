@@ -12,11 +12,11 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-#include "ros2_control_demo_example_10/gpio_controller.hpp"
+#include "viprohead_viscotec_ros2/gpio_controller.hpp"
 
 #include <string>
 
-namespace ros2_control_demo_example_10
+namespace viprohead_viscotec_ros2
 {
 controller_interface::CallbackReturn GPIOController::on_init()
 {
@@ -143,9 +143,9 @@ controller_interface::CallbackReturn GPIOController::on_deactivate(
   return LifecycleNodeInterface::CallbackReturn::SUCCESS;
 }
 
-}  // namespace ros2_control_demo_example_10
+}  // namespace viprohead_viscotec_ros2
 
 #include "pluginlib/class_list_macros.hpp"
 
 PLUGINLIB_EXPORT_CLASS(
-  ros2_control_demo_example_10::GPIOController, controller_interface::ControllerInterface)
+  viprohead_viscotec_ros2::GPIOController, controller_interface::ControllerInterface)

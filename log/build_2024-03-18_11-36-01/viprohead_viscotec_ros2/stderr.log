@@ -1,0 +1,116 @@
+In file included from [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:15[m[K:
+[01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/include/viprohead_viscotec_ros2/gpio_controller.hpp:37:3:[m[K [01;31m[Kerror: [m[K‘[01m[KVIPROHEAD_VISCOTEC_ROS2_PUBLIC[m[K’ does not name a type; did you mean ‘[01m[KVIPROHEAD_VISCOTEC_ROS2_BUILDING_DLL[m[K’?
+   37 |   [01;31m[KVIPROHEAD_VISCOTEC_ROS2_PUBLIC[m[K
+      |   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |   [32m[KVIPROHEAD_VISCOTEC_ROS2_BUILDING_DLL[m[K
+[01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/include/viprohead_viscotec_ros2/gpio_controller.hpp:40:3:[m[K [01;31m[Kerror: [m[K‘[01m[KVIPROHEAD_VISCOTEC_ROS2_PUBLIC[m[K’ does not name a type; did you mean ‘[01m[KVIPROHEAD_VISCOTEC_ROS2_BUILDING_DLL[m[K’?
+   40 |   [01;31m[KVIPROHEAD_VISCOTEC_ROS2_PUBLIC[m[K
+      |   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |   [32m[KVIPROHEAD_VISCOTEC_ROS2_BUILDING_DLL[m[K
+[01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/include/viprohead_viscotec_ros2/gpio_controller.hpp:43:3:[m[K [01;31m[Kerror: [m[K‘[01m[KVIPROHEAD_VISCOTEC_ROS2_PUBLIC[m[K’ does not name a type; did you mean ‘[01m[KVIPROHEAD_VISCOTEC_ROS2_BUILDING_DLL[m[K’?
+   43 |   [01;31m[KVIPROHEAD_VISCOTEC_ROS2_PUBLIC[m[K
+      |   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |   [32m[KVIPROHEAD_VISCOTEC_ROS2_BUILDING_DLL[m[K
+[01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/include/viprohead_viscotec_ros2/gpio_controller.hpp:47:3:[m[K [01;31m[Kerror: [m[K‘[01m[KVIPROHEAD_VISCOTEC_ROS2_PUBLIC[m[K’ does not name a type; did you mean ‘[01m[KVIPROHEAD_VISCOTEC_ROS2_BUILDING_DLL[m[K’?
+   47 |   [01;31m[KVIPROHEAD_VISCOTEC_ROS2_PUBLIC[m[K
+      |   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |   [32m[KVIPROHEAD_VISCOTEC_ROS2_BUILDING_DLL[m[K
+[01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/include/viprohead_viscotec_ros2/gpio_controller.hpp:50:3:[m[K [01;31m[Kerror: [m[K‘[01m[KVIPROHEAD_VISCOTEC_ROS2_PUBLIC[m[K’ does not name a type; did you mean ‘[01m[KVIPROHEAD_VISCOTEC_ROS2_BUILDING_DLL[m[K’?
+   50 |   [01;31m[KVIPROHEAD_VISCOTEC_ROS2_PUBLIC[m[K
+      |   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |   [32m[KVIPROHEAD_VISCOTEC_ROS2_BUILDING_DLL[m[K
+[01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/include/viprohead_viscotec_ros2/gpio_controller.hpp:53:3:[m[K [01;31m[Kerror: [m[K‘[01m[KVIPROHEAD_VISCOTEC_ROS2_PUBLIC[m[K’ does not name a type; did you mean ‘[01m[KVIPROHEAD_VISCOTEC_ROS2_BUILDING_DLL[m[K’?
+   53 |   [01;31m[KVIPROHEAD_VISCOTEC_ROS2_PUBLIC[m[K
+      |   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |   [32m[KVIPROHEAD_VISCOTEC_ROS2_BUILDING_DLL[m[K
+[01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/include/viprohead_viscotec_ros2/gpio_controller.hpp:56:3:[m[K [01;31m[Kerror: [m[K‘[01m[KVIPROHEAD_VISCOTEC_ROS2_PUBLIC[m[K’ does not name a type; did you mean ‘[01m[KVIPROHEAD_VISCOTEC_ROS2_BUILDING_DLL[m[K’?
+   56 |   [01;31m[KVIPROHEAD_VISCOTEC_ROS2_PUBLIC[m[K
+      |   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |   [32m[KVIPROHEAD_VISCOTEC_ROS2_BUILDING_DLL[m[K
+[01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:21:38:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kcontroller_interface::CallbackReturn viprohead_viscotec_ros2::GPIOController::on_init()[m[K’
+   21 | controller_interface::CallbackReturn [01;31m[KGPIOController[m[K::on_init()
+      |                                      [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:21:38:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kcontroller_interface::CallbackReturn viprohead_viscotec_ros2::GPIOController::on_init()[m[K’
+In file included from [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:15[m[K:
+[01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/include/viprohead_viscotec_ros2/gpio_controller.hpp:32:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass viprohead_viscotec_ros2::GPIOController[m[K’ defined here
+   32 | class [01;36m[KGPIOController[m[K : public controller_interface::ControllerInterface
+      |       [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:36:46:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kcontroller_interface::InterfaceConfiguration viprohead_viscotec_ros2::GPIOController::command_interface_configuration() const[m[K’
+   36 | controller_interface::InterfaceConfiguration [01;31m[KGPIOController[m[K::command_interface_configuration() const
+      |                                              [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:36:46:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kcontroller_interface::InterfaceConfiguration viprohead_viscotec_ros2::GPIOController::command_interface_configuration() const[m[K’
+In file included from [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:15[m[K:
+[01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/include/viprohead_viscotec_ros2/gpio_controller.hpp:32:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass viprohead_viscotec_ros2::GPIOController[m[K’ defined here
+   32 | class [01;36m[KGPIOController[m[K : public controller_interface::ControllerInterface
+      |       [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:45:46:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kcontroller_interface::InterfaceConfiguration viprohead_viscotec_ros2::GPIOController::state_interface_configuration() const[m[K’
+   45 | controller_interface::InterfaceConfiguration [01;31m[KGPIOController[m[K::state_interface_configuration() const
+      |                                              [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:45:46:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kcontroller_interface::InterfaceConfiguration viprohead_viscotec_ros2::GPIOController::state_interface_configuration() const[m[K’
+In file included from [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:15[m[K:
+[01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/include/viprohead_viscotec_ros2/gpio_controller.hpp:32:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass viprohead_viscotec_ros2::GPIOController[m[K’ defined here
+   32 | class [01;36m[KGPIOController[m[K : public controller_interface::ControllerInterface
+      |       [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:54:35:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kcontroller_interface::return_type viprohead_viscotec_ros2::GPIOController::update(const rclcpp::Time&, const rclcpp::Duration&)[m[K’
+   54 | controller_interface::return_type [01;31m[KGPIOController[m[K::update(
+      |                                   [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:54:35:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kcontroller_interface::return_type viprohead_viscotec_ros2::GPIOController::update(const rclcpp::Time&, const rclcpp::Duration&)[m[K’
+In file included from [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:15[m[K:
+[01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/include/viprohead_viscotec_ros2/gpio_controller.hpp:32:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass viprohead_viscotec_ros2::GPIOController[m[K’ defined here
+   32 | class [01;36m[KGPIOController[m[K : public controller_interface::ControllerInterface
+      |       [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:93:38:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kcontroller_interface::CallbackReturn viprohead_viscotec_ros2::GPIOController::on_configure(const rclcpp_lifecycle::State&)[m[K’
+   93 | controller_interface::CallbackReturn [01;31m[KGPIOController[m[K::on_configure(
+      |                                      [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:93:38:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kcontroller_interface::CallbackReturn viprohead_viscotec_ros2::GPIOController::on_configure(const rclcpp_lifecycle::State&)[m[K’
+In file included from [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:15[m[K:
+[01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/include/viprohead_viscotec_ros2/gpio_controller.hpp:32:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass viprohead_viscotec_ros2::GPIOController[m[K’ defined here
+   32 | class [01;36m[KGPIOController[m[K : public controller_interface::ControllerInterface
+      |       [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:125:38:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kcontroller_interface::CallbackReturn viprohead_viscotec_ros2::GPIOController::on_activate(const rclcpp_lifecycle::State&)[m[K’
+  125 | controller_interface::CallbackReturn [01;31m[KGPIOController[m[K::on_activate(
+      |                                      [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:125:38:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kcontroller_interface::CallbackReturn viprohead_viscotec_ros2::GPIOController::on_activate(const rclcpp_lifecycle::State&)[m[K’
+In file included from [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:15[m[K:
+[01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/include/viprohead_viscotec_ros2/gpio_controller.hpp:32:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass viprohead_viscotec_ros2::GPIOController[m[K’ defined here
+   32 | class [01;36m[KGPIOController[m[K : public controller_interface::ControllerInterface
+      |       [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:131:38:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kcontroller_interface::CallbackReturn viprohead_viscotec_ros2::GPIOController::on_deactivate(const rclcpp_lifecycle::State&)[m[K’
+  131 | controller_interface::CallbackReturn [01;31m[KGPIOController[m[K::on_deactivate(
+      |                                      [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:131:38:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kcontroller_interface::CallbackReturn viprohead_viscotec_ros2::GPIOController::on_deactivate(const rclcpp_lifecycle::State&)[m[K’
+In file included from [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:15[m[K:
+[01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/include/viprohead_viscotec_ros2/gpio_controller.hpp:32:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass viprohead_viscotec_ros2::GPIOController[m[K’ defined here
+   32 | class [01;36m[KGPIOController[m[K : public controller_interface::ControllerInterface
+      |       [01;36m[K^~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/class_loader/class_loader/class_loader_core.hpp:57[m[K,
+                 from [01m[K/opt/ros/humble/include/class_loader/class_loader/class_loader.hpp:55[m[K,
+                 from [01m[K/opt/ros/humble/include/pluginlib/pluginlib/class_list_macros.hpp:40[m[K,
+                 from [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:148[m[K:
+/opt/ros/humble/include/class_loader/class_loader/meta_object.hpp: In instantiation of ‘[01m[KB* class_loader::impl::MetaObject<C, B>::create() const [with C = viprohead_viscotec_ros2::GPIOController; B = controller_interface::ControllerInterface][m[K’:
+[01m[K/opt/ros/humble/include/class_loader/class_loader/meta_object.hpp:216:7:[m[K   required from here
+[01m[K/opt/ros/humble/include/class_loader/class_loader/meta_object.hpp:218:12:[m[K [01;31m[Kerror: [m[Kinvalid new-expression of abstract class type ‘[01m[Kviprohead_viscotec_ros2::GPIOController[m[K’
+  218 |     return [01;31m[Knew C[m[K;
+      |            [01;31m[K^~~~~[m[K
+In file included from [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:15[m[K:
+[01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/include/viprohead_viscotec_ros2/gpio_controller.hpp:32:7:[m[K [01;36m[Knote: [m[K  because the following virtual functions are pure within ‘[01m[Kviprohead_viscotec_ros2::GPIOController[m[K’:
+   32 | class [01;36m[KGPIOController[m[K : public controller_interface::ControllerInterface
+      |       [01;36m[K^~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/include/viprohead_viscotec_ros2/gpio_controller.hpp:26[m[K,
+                 from [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:88:34:[m[K [01;36m[Knote: [m[K    ‘[01m[Kvirtual controller_interface::InterfaceConfiguration controller_interface::ControllerInterfaceBase::command_interface_configuration() const[m[K’
+   88 |   virtual InterfaceConfiguration [01;36m[Kcommand_interface_configuration[m[K() const = 0;
+      |                                  [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:105:34:[m[K [01;36m[Knote: [m[K    ‘[01m[Kvirtual controller_interface::InterfaceConfiguration controller_interface::ControllerInterfaceBase::state_interface_configuration() const[m[K’
+  105 |   virtual InterfaceConfiguration [01;36m[Kstate_interface_configuration[m[K() const = 0;
+      |                                  [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:132:26:[m[K [01;36m[Knote: [m[K    ‘[01m[Kvirtual rclcpp_lifecycle::node_interfaces::LifecycleNodeInterface::CallbackReturn controller_interface::ControllerInterfaceBase::on_init()[m[K’
+  132 |   virtual CallbackReturn [01;36m[Kon_init[m[K() = 0;
+      |                          [01;36m[K^~~~~~~[m[K
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:144:23:[m[K [01;36m[Knote: [m[K    ‘[01m[Kvirtual controller_interface::return_type controller_interface::ControllerInterfaceBase::update(const rclcpp::Time&, const rclcpp::Duration&)[m[K’
+  144 |   virtual return_type [01;36m[Kupdate[m[K(const rclcpp::Time & time, const rclcpp::Duration & period) = 0;
+      |                       [01;36m[K^~~~~~[m[K
+gmake[2]: *** [CMakeFiles/viprohead_viscotec_ros2.dir/build.make:90 : CMakeFiles/viprohead_viscotec_ros2.dir/controllers/gpio_controller.cpp.o] Erreur 1
+gmake[1]: *** [CMakeFiles/Makefile2:137 : CMakeFiles/viprohead_viscotec_ros2.dir/all] Erreur 2
+gmake: *** [Makefile:146 : all] Erreur 2

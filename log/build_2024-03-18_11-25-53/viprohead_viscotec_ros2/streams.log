@@ -1,0 +1,33 @@
+[0.105s] Invoking command in '/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/build/viprohead_viscotec_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/barbe/ws_moveit2/install/moveit_configs_utils:/home/barbe/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake /home/barbe/ws_develop/viproHEAD5_viscotec_ros2 -DCMAKE_INSTALL_PREFIX=/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/install/viprohead_viscotec_ros2
+[0.128s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.405s] -- Found hardware_interface: 2.40.0 (/opt/ros/humble/share/hardware_interface/cmake)
+[0.453s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.457s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.467s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.489s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.514s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.388s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.392s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.432s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[1.447s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[1.479s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[1.490s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[1.507s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.713s] -- Found controller_interface: 2.40.0 (/opt/ros/humble/share/controller_interface/cmake)
+[2.153s] -- Found ament_cmake_pytest: 1.3.8 (/opt/ros/humble/share/ament_cmake_pytest/cmake)
+[3.095s] -- Configuring done
+[3.150s] -- Generating done
+[3.154s] -- Build files have been written to: /home/barbe/ws_develop/viproHEAD5_viscotec_ros2/build/viprohead_viscotec_ros2
+[3.166s] Invoked command in '/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/build/viprohead_viscotec_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/barbe/ws_moveit2/install/moveit_configs_utils:/home/barbe/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake /home/barbe/ws_develop/viproHEAD5_viscotec_ros2 -DCMAKE_INSTALL_PREFIX=/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/install/viprohead_viscotec_ros2
+[3.167s] Invoking command in '/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/build/viprohead_viscotec_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/barbe/ws_moveit2/install/moveit_configs_utils:/home/barbe/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /home/barbe/ws_develop/viproHEAD5_viscotec_ros2/build/viprohead_viscotec_ros2 -- -j20 -l20
+[3.269s] [ 33%] [32mBuilding CXX object CMakeFiles/viprohead_viscotec_ros2.dir/hardware/extruder.cpp.o[0m
+[3.269s] [ 66%] [32mBuilding CXX object CMakeFiles/viprohead_viscotec_ros2.dir/controllers/gpio_controller.cpp.o[0m
+[3.290s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:15:10:[m[K [01;31m[Kfatal error: [m[Kros2_control_demo_example_10/gpio_controller.hpp: Aucun fichier ou dossier de ce nom
+[3.290s]    15 | #include [01;31m[K"ros2_control_demo_example_10/gpio_controller.hpp"[m[K
+[3.290s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.290s] compilation terminated.
+[3.291s] gmake[2]: *** [CMakeFiles/viprohead_viscotec_ros2.dir/build.make:90 : CMakeFiles/viprohead_viscotec_ros2.dir/controllers/gpio_controller.cpp.o] Erreur 1
+[3.291s] gmake[2]: *** Attente des tâches non terminées....
+[3.297s] gmake[1]: *** [CMakeFiles/Makefile2:137 : CMakeFiles/viprohead_viscotec_ros2.dir/all] Erreur 2
+[3.297s] gmake: *** [Makefile:146 : all] Erreur 2
+[3.301s] Invoked command in '/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/build/viprohead_viscotec_ros2' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/barbe/ws_moveit2/install/moveit_configs_utils:/home/barbe/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /home/barbe/ws_develop/viproHEAD5_viscotec_ros2/build/viprohead_viscotec_ros2 -- -j20 -l20

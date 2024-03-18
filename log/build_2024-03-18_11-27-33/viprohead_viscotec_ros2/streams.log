@@ -1,0 +1,12 @@
+[0.112s] Invoking command in '/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/build/viprohead_viscotec_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/barbe/ws_moveit2/install/moveit_configs_utils:/home/barbe/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /home/barbe/ws_develop/viproHEAD5_viscotec_ros2/build/viprohead_viscotec_ros2 -- -j20 -l20
+[0.209s] [35m[1mConsolidate compiler generated dependencies of target viprohead_viscotec_ros2[0m
+[0.241s] [ 33%] [32mBuilding CXX object CMakeFiles/viprohead_viscotec_ros2.dir/controllers/gpio_controller.cpp.o[0m
+[0.439s] In file included from [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:15[m[K:
+[0.439s] [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/include/viprohead_viscotec_ros2/gpio_controller.hpp:23:10:[m[K [01;31m[Kfatal error: [m[Kros2_control_demo_example_10/visibility_control.h: Aucun fichier ou dossier de ce nom
+[0.440s]    23 | #include [01;31m[K"ros2_control_demo_example_10/visibility_control.h"[m[K
+[0.440s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.440s] compilation terminated.
+[0.442s] gmake[2]: *** [CMakeFiles/viprohead_viscotec_ros2.dir/build.make:90 : CMakeFiles/viprohead_viscotec_ros2.dir/controllers/gpio_controller.cpp.o] Erreur 1
+[0.442s] gmake[1]: *** [CMakeFiles/Makefile2:137 : CMakeFiles/viprohead_viscotec_ros2.dir/all] Erreur 2
+[0.443s] gmake: *** [Makefile:146 : all] Erreur 2
+[0.447s] Invoked command in '/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/build/viprohead_viscotec_ros2' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/barbe/ws_moveit2/install/moveit_configs_utils:/home/barbe/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /home/barbe/ws_develop/viproHEAD5_viscotec_ros2/build/viprohead_viscotec_ros2 -- -j20 -l20
