@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="extruder">
+
+  <link name="world"/>
+
+  <xacro:include filename="$(find description)/ros2_control/extruder.ros2_control.xacro" />
+  
+  <xacro:extruder/>
+</robot>

@@ -1,0 +1,22 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 100  # Hz
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+    gpio_command_controller:
+      type: gpio_controllers/GpioCommandController
+
+    velocity_controller:
+      type: velocity_controllers/JointGroupVelocityController
+
+gpio_command_controller:
+  ros__parameters:
+    gpios:
+      - extruder
+    command_interfaces:
+      extruder:
+        - enable
+        - reset
+        - velocity
