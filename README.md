@@ -1,4 +1,4 @@
-# viproHEAD5_viscotec_ros2
+# ViproHEAD5 (Viscotec)
 
    ViproHEAD5 silicone extruder from Viscotec with Slave module EL7301.
 
