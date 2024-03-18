@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-#include "viprohead_viscotec_ros2/gpio_controller.hpp"
+#include "viprohead5_viscotec_ros2/gpio_controller.hpp"
 
 #include <string>
 

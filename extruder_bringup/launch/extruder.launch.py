@@ -42,7 +42,7 @@ def generate_launch_description():
             " ",
             PathJoinSubstitution(
                 [
-                    FindPackageShare("viprohead_viscotec_ros2"),
+                    FindPackageShare("viprohead5_viscotec_ros2"),
                     "urdf",
                     "extruder.urdf.xacro",
                 ]
@@ -56,7 +56,7 @@ def generate_launch_description():
 
     robot_controllers = PathJoinSubstitution(
         [
-            FindPackageShare("viprohead_viscotec_ros2"),
+            FindPackageShare("viprohead5_viscotec_ros2"),
             "config",
             "controllers.yaml",
         ]

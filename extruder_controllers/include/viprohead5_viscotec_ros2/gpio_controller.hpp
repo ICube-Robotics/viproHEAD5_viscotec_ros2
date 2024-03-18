@@ -20,7 +20,7 @@
 #include <vector>
 
 #include "control_msgs/msg/interface_value.hpp"
-#include "viprohead_viscotec_ros2/visibility_control.h"
+#include "viprohead5_viscotec_ros2/visibility_control.h"
 #include "std_msgs/msg/float64_multi_array.hpp"
 
 #include "controller_interface/controller_interface.hpp"
