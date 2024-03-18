@@ -1,8 +1,0 @@
-In file included from [01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/gpio_controller.cpp:15[m[K:
-[01m[K/home/barbe/ws_develop/viproHEAD5_viscotec_ros2/controllers/include/viprohead_viscotec_ros2/gpio_controller.hpp:23:10:[m[K [01;31m[Kfatal error: [m[Kros2_control_demo_example_10/visibility_control.h: Aucun fichier ou dossier de ce nom
-   23 | #include [01;31m[K"ros2_control_demo_example_10/visibility_control.h"[m[K
-      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
-compilation terminated.
-gmake[2]: *** [CMakeFiles/viprohead_viscotec_ros2.dir/build.make:90 : CMakeFiles/viprohead_viscotec_ros2.dir/controllers/gpio_controller.cpp.o] Erreur 1
-gmake[1]: *** [CMakeFiles/Makefile2:137 : CMakeFiles/viprohead_viscotec_ros2.dir/all] Erreur 2
-gmake: *** [Makefile:146 : all] Erreur 2
