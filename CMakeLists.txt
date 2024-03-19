@@ -14,6 +14,9 @@ set(THIS_PACKAGE_INCLUDE_DEPENDS
   rclcpp
   rclcpp_lifecycle
   controller_interface
+  ethercat_driver
+  ethercat_interface
+  ethercat_generic_slave
 )
 
 # find dependencies
@@ -21,7 +24,6 @@ find_package(ament_cmake REQUIRED)
 foreach(Dependency IN ITEMS ${THIS_PACKAGE_INCLUDE_DEPENDS})
   find_package(${Dependency} REQUIRED)
 endforeach()
-
 
 ## COMPILE
 add_library(

@@ -11,6 +11,11 @@ controller_manager:
     velocity_controller:
       type: velocity_controllers/JointGroupVelocityController
 
+velocity_controller:
+  ros__parameters:
+    joints:
+      - extruder
+
 gpio_command_controller:
   ros__parameters:
     gpios:

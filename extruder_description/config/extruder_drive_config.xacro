@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="extruder_drive">
+
+  <link name="world"/>
+
+  <xacro:include filename="$(find viprohead5_viscotec_ros2)/ros2_control/extruder_drive.ros2_control.xacro" />
+  
+  <xacro:extruder_drive/>
+</robot>

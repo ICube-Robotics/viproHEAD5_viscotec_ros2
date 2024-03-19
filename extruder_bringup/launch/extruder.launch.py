@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 from launch import LaunchDescription
-from launch.substitutions import Command, FindExecutable, PathJoinSubstitution
+from launch.substitutions import Command, FindExecutable, PathJoinSubstitution, LaunchConfiguration
 from launch.actions import DeclareLaunchArgument
 
 from launch_ros.actions import Node
@@ -25,10 +25,13 @@ def generate_launch_description():
     declared_arguments.append(
         DeclareLaunchArgument(
             'description_file',
-            default_value='extruder.config.xacro',
-            description='URDF/XACRO description file with the sensor.',
+            default_value='extruder_drive.config.xacro',
+            description='URDF/XACRO description file with the extruder.',
         )
     )
+    description_file = LaunchConfiguration('description_file')
+
+
     # Get URDF via xacro
     robot_description_content = Command(
         [
@@ -37,8 +40,8 @@ def generate_launch_description():
             PathJoinSubstitution(
                 [
                     FindPackageShare("viprohead5_viscotec_ros2"),
-                    "config",
-                    "extruder_config.xacro",
+                    "description/config",
+                    description_file,
                 ]
             ),
         ]

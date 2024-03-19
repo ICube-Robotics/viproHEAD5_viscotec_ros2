@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-  <xacro:macro name="extruder">
+  <xacro:macro name="extruder_drive">
 
-    <ros2_control name="extruder" type="system">
+    <ros2_control name="extruder_drive" type="system">
       <hardware>
         <plugin>ethercat_driver/EthercatDriver</plugin>
         <param name="master_id">0</param>
-        <param name="control_frequency">100</param>
+        <param name="control_frequency">225</param>
       </hardware>
 
       <joint name="extruder">
@@ -21,7 +21,7 @@
         <command_interface name="enable"/>
         <command_interface name="reset"/>
         <command_interface name="velocity"/>
-        <ec_module name="viprohead">
+        <ec_module name="bhf_el7031">
           <plugin>ethercat_generic_plugins/GenericEcSlave</plugin>
           <param name="alias">0</param>
           <param name="position">1</param>
