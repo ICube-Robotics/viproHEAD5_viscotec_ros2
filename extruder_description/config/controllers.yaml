@@ -1,15 +1,16 @@
 controller_manager:
   ros__parameters:
-    update_rate: 100  # Hz
+    update_rate: 225  # Hz
 
     joint_state_broadcaster:
       type: joint_state_broadcaster/JointStateBroadcaster
 
+    velocity_controller:
+      type: velocity_controllers/JointGroupVelocityController
+
     gpio_command_controller:
       type: gpio_controllers/GpioCommandController
 
-    velocity_controller:
-      type: velocity_controllers/JointGroupVelocityController
 
 velocity_controller:
   ros__parameters:

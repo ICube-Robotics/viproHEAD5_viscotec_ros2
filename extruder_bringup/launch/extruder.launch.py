@@ -25,7 +25,7 @@ def generate_launch_description():
     declared_arguments.append(
         DeclareLaunchArgument(
             'description_file',
-            default_value='extruder_drive.config.xacro',
+            default_value='extruder_drive_config.xacro',
             description='URDF/XACRO description file with the extruder.',
         )
     )
@@ -40,7 +40,7 @@ def generate_launch_description():
             PathJoinSubstitution(
                 [
                     FindPackageShare("viprohead5_viscotec_ros2"),
-                    "description/config",
+                    "config",
                     description_file,
                 ]
             ),
@@ -67,10 +67,16 @@ def generate_launch_description():
         executable="spawner",
         arguments=["joint_state_broadcaster", "-c", "/controller_manager"],
     )
-
+    gpio_command_controller = Node(
+        package='controller_manager',
+        executable='spawner',
+        arguments=['gpio_command_controller', '--controller-manager',
+                   ['controller_manager']],
+    )
     nodes = [
         control_node,
         joint_state_broadcaster_spawner,
+        gpio_command_controller,
     ]
 
     return LaunchDescription(
