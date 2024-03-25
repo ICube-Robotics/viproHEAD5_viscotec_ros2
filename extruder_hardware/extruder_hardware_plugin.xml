@@ -1,0 +1,9 @@
+<library path="extruder_hardware">
+  <class name="extruder_hardware/Extruder"
+         type="extruder_hardware::Extruder"
+         base_class_type="hardware_interface::SystemInterface">
+    <description>
+      Hardware Interface of a simulated extruder viprohead viscotec (not use).
+    </description>
+  </class>
+</library>
