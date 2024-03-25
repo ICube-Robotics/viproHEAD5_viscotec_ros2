@@ -11,11 +11,6 @@ controller_manager:
     gpio_command_controller:
       type: gpio_controllers/GpioCommandController
 
-velocity_controller:
-  ros__parameters:
-    joints:
-      - extruder
-
 extruder_trajectory_flow_controller:
   ros__parameters:
     joints:
