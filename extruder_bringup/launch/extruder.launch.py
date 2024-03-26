@@ -37,7 +37,7 @@ def generate_launch_description():
         [
             FindPackageShare("extruder_description"),
             "config",
-            "extruder_controllers.yaml",
+            "controllers.yaml",
         ]
     )
     control_node = Node(
