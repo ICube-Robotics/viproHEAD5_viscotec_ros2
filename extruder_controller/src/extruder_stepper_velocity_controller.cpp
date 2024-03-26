@@ -71,9 +71,8 @@ CallbackReturn ExtruderStepperVelocityController::on_configure(
   RCLCPP_INFO(get_node()->get_logger(), "configure successful");
   return CallbackReturn::SUCCESS;
 }
-// As the demo scara hardware interface only supports position commands, it can be directly
-// defined here without the need of getting as parameter. The position interface is then 
-// affected to all controlled joints.
+
+
 controller_interface::InterfaceConfiguration
 ExtruderStepperVelocityController::command_interface_configuration() const
 {
@@ -81,7 +80,7 @@ ExtruderStepperVelocityController::command_interface_configuration() const
   conf.type = controller_interface::interface_configuration_type::INDIVIDUAL;
   conf.names.reserve(joint_names_.size());
   for (const auto & joint_name : joint_names_) {
-    conf.names.push_back(joint_name + "/" + hardware_interface::HW_IF_POSITION);
+    conf.names.push_back(joint_name + "/" + hardware_interface::HW_IF_VELOCITY);
   }
   return conf;
 }
@@ -119,7 +118,7 @@ CallbackReturn ExtruderStepperVelocityController::on_activate(
   std::vector<std::reference_wrapper<LoanedCommandInterface>> ordered_interfaces;
   if (
     !get_ordered_interfaces(
-      command_interfaces_, joint_names_, hardware_interface::HW_IF_POSITION, ordered_interfaces) ||
+      command_interfaces_, joint_names_, hardware_interface::HW_IF_VELOCITY, ordered_interfaces) ||
     command_interfaces_.size() != ordered_interfaces.size())
   {
     RCLCPP_ERROR(
@@ -183,7 +182,6 @@ controller_interface::return_type ExtruderStepperVelocityController::update(
      double vq = (period.nanoseconds()*1e-9);//(*joint_velocity)->data[j];
 
      double command = 0*vq;//q + vq*(period.nanoseconds()*1e-9);
-    
      command_interfaces_[j].set_value(command);
    }
 
