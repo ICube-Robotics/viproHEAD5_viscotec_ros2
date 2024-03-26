@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!-- Extruder viproHEAD5 -->
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="extruder">
+
+    <!-- Import scara urdf file -->
+    <!-- <xacro:include filename="$(find extruder_description)/urdf/scara.urdf" /> -->
+
+    <!-- Import scara materials file -->
+    <!-- <xacro:include filename="$(find extruder_description)/config/materials.urdf" /> -->
+
+    <!-- Import scara ros2_control description -->
+    <xacro:include filename="$(find extruder_description)/ros2_control/extruder_drive.ros2_control.xacro" />
+
+    <!-- Import all Gazebo-customization elements -->
+    <!-- <xacro:include filename="$(find extruder_description)/gazebo/scara.gazebo.xacro"/> -->
+    <xacro:extruder_drive/>
+</robot>
+

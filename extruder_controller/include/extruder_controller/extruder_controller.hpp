@@ -19,7 +19,7 @@
 #define EXTRUDER_CONTROLLER_HPP
 
 // Libraries
-#include <controller_interface/extruder_controller_interface.hpp>
+#include <controller_interface/chainable_controller_interface.hpp>
 #include <hardware_interface/types/hardware_interface_type_values.hpp>
 #include "extruder_controller/visibility_control.h"
 #include "pluginlib/class_list_macros.hpp"

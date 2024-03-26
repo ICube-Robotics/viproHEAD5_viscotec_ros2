@@ -26,12 +26,12 @@ set(THIS_PACKAGE_INCLUDE_DEPENDS
   ros2_control
 )
 
-install(DIRECTORY
-  launch
-  config
-  urdf
-  DESTINATION share/${PROJECT_NAME}/
-)
+# install(DIRECTORY
+#   launch
+#   config
+#   urdf
+#   DESTINATION share/${PROJECT_NAME}/
+# )
 
 ## extruder_controller
 add_library(
@@ -40,12 +40,12 @@ add_library(
   src/extruder_controller.cpp
 )
 target_include_directories(
-    extruder_controller
+  extruder_controller
   PRIVATE
   include
 )
 ament_target_dependencies(
-    extruder_controller
+  extruder_controller
   controller_interface
   hardware_interface
   realtime_tools

@@ -10,7 +10,7 @@ class TrajectoryPublisher(Node):
 
     def __init__(self):
         super().__init__('extruder_flow_publisher')
-        self.publisher_ = self.create_publisher(JointTrajectory, '/gpio_command_controller/joint_trajectory', 1)
+        self.publisher_ = self.create_publisher(JointTrajectory, '/extruder_controller/joint_trajectory', 1)
         timer_period = 2  # seconds
         self.timer = self.create_timer(timer_period, self.timer_callback)
         self.i = 0

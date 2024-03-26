@@ -14,7 +14,7 @@
 //
 /// \authors: Laurent Barbé
 
-#include "extruder_controller/chained_controller.hpp"
+#include "extruder_controller/extruder_controller.hpp"
 
 controller_interface::CallbackReturn extruder_controller::ExtruderController::on_init()
 {

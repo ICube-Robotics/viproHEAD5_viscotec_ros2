@@ -20,37 +20,22 @@ from launch_ros.substitutions import FindPackageShare
 
 
 def generate_launch_description():
-    # Declare arguments
-    declared_arguments = []
-    declared_arguments.append(
-        DeclareLaunchArgument(
-            'description_file',
-            default_value='extruder_drive_config.xacro',
-            description='URDF/XACRO description file with the extruder.',
-        )
-    )
-    description_file = LaunchConfiguration('description_file')
-
 
     # Get URDF via xacro
     robot_description_content = Command(
         [
-            PathJoinSubstitution([FindExecutable(name="xacro")]),
-            " ",
+            PathJoinSubstitution([FindExecutable(name='xacro')]),
+            ' ',
             PathJoinSubstitution(
-                [
-                    FindPackageShare("viprohead5_viscotec_ros2"),
-                    "config",
-                    description_file,
-                ]
+                [FindPackageShare('extruder_description'), 'config', 'extruder_drive.config.xacro']
             ),
         ]
     )
-    robot_description = {"robot_description": robot_description_content}
+    robot_description = {'robot_description': robot_description_content}
 
     robot_controllers = PathJoinSubstitution(
         [
-            FindPackageShare("viprohead5_viscotec_ros2"),
+            FindPackageShare("extruder_description"),
             "config",
             "extruder_controllers.yaml",
         ]
@@ -79,6 +64,4 @@ def generate_launch_description():
         gpio_command_controller,
     ]
 
-    return LaunchDescription(
-        declared_arguments +
-        nodes)
+    return LaunchDescription(nodes)
