@@ -20,7 +20,15 @@ from launch_ros.substitutions import FindPackageShare
 
 
 def generate_launch_description():
-
+    # Declare arguments
+    declared_arguments = []
+    declared_arguments.append(
+        DeclareLaunchArgument(
+            'description_file',
+            default_value='extruder_drive.config.xacro',
+            description='URDF/XACRO description file for extruder.',
+        )
+    )
     # Get URDF via xacro
     robot_description_content = Command(
         [
@@ -37,7 +45,7 @@ def generate_launch_description():
         [
             FindPackageShare("extruder_description"),
             "config",
-            "controllers.yaml",
+            "extruder_controllers.yaml",
         ]
     )
     control_node = Node(
@@ -47,21 +55,29 @@ def generate_launch_description():
         output="both",
     )
 
-    joint_state_broadcaster_spawner = Node(
-        package="controller_manager",
-        executable="spawner",
-        arguments=["joint_state_broadcaster", "-c", "/controller_manager"],
-    )
     gpio_command_controller = Node(
         package='controller_manager',
         executable='spawner',
         arguments=['gpio_command_controller', '--controller-manager',
                    ['controller_manager']],
     )
+
+    joint_state_broadcaster_spawner = Node(
+        package="controller_manager",
+        executable="spawner",
+        arguments=["joint_state_broadcaster", "--controller-manager", "/controller_manager"],
+    )
+    robot_controller_spawner = Node(
+        package='controller_manager',
+        executable='spawner',
+        arguments=['extruder_stepper_velocity_controller'],
+    )
     nodes = [
         control_node,
         joint_state_broadcaster_spawner,
         gpio_command_controller,
+        robot_controller_spawner
     ]
 
-    return LaunchDescription(nodes)
+    return LaunchDescription( declared_arguments +
+        nodes)

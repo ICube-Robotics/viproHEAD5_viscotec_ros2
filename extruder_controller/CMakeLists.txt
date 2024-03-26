@@ -1,87 +1,81 @@
-cmake_minimum_required(VERSION 3.5.0)
-project(extruder_controller)
+cmake_minimum_required(VERSION 3.5)
+project(extruder_stepper_velocity_controller)
 
-# Default to C11
-if(NOT CMAKE_C_STANDARD)
-  set(CMAKE_C_STANDARD 11)
-endif()
 # Default to C++14
 if(NOT CMAKE_CXX_STANDARD)
   set(CMAKE_CXX_STANDARD 14)
 endif()
 
-if(NOT WIN32)
-  add_compile_options(-Wall -Wextra -Wpedantic)
+if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
+  add_compile_options(-Wall -Wextra -Wpedantic -Wno-deprecated-copy)
 endif()
 
+# find dependencies
 find_package(ament_cmake REQUIRED)
+find_package(controller_interface REQUIRED)
+find_package(hardware_interface REQUIRED)
+find_package(pluginlib REQUIRED)
 find_package(rclcpp REQUIRED)
-find_package(rclcpp_action REQUIRED)
-find_package(ros2_control REQUIRED)
-find_package(controller_manager REQUIRED)
+find_package(rclcpp_lifecycle REQUIRED)
+find_package(realtime_tools REQUIRED)
+find_package(std_msgs REQUIRED)
 
-set(THIS_PACKAGE_INCLUDE_DEPENDS
-  ament_cmake
-  rclcpp
-  ros2_control
-)
+include_directories(${EIGEN3_INCLUDE_DIR})
 
-# install(DIRECTORY
-#   launch
-#   config
-#   urdf
-#   DESTINATION share/${PROJECT_NAME}/
-# )
-
-## extruder_controller
-add_library(
-  extruder_controller
+add_library(extruder_stepper_velocity_controller
   SHARED
-  src/extruder_controller.cpp
+  src/extruder_stepper_velocity_controller.cpp
 )
-target_include_directories(
-  extruder_controller
-  PRIVATE
-  include
-)
-ament_target_dependencies(
-  extruder_controller
+target_include_directories(extruder_stepper_velocity_controller PRIVATE include)
+ament_target_dependencies(extruder_stepper_velocity_controller
+  builtin_interfaces
   controller_interface
   hardware_interface
-  realtime_tools
   pluginlib
-  rclcpp
   rclcpp_lifecycle
-  ${THIS_PACKAGE_INCLUDE_DEPENDS}
+  rcutils
+  realtime_tools
+  std_msgs
 )
-
-pluginlib_export_plugin_description_file(controller_interface extruder_controller.xml)
+# Causes the visibility macros to use dllexport rather than dllimport,
+# which is appropriate when building the dll but not consuming it.
+target_compile_definitions(extruder_stepper_velocity_controller PRIVATE "scara_joint_velocity_controller_BUILDING_DLL")
+# prevent pluginlib from using boost
+target_compile_definitions(extruder_stepper_velocity_controller PUBLIC "PLUGINLIB__DISABLE_BOOST_FUNCTIONS")
+pluginlib_export_plugin_description_file(controller_interface controller_plugin.xml)
 
 install(
-  TARGETS
-  extruder_controller
-  DESTINATION lib
-)
-install(
-  DIRECTORY
-    include
+  DIRECTORY include/
   DESTINATION include
 )
 
+install(
+  TARGETS
+  extruder_stepper_velocity_controller
+  RUNTIME DESTINATION bin
+  ARCHIVE DESTINATION lib
+  LIBRARY DESTINATION lib
+)
+
+ament_export_dependencies(
+  controller_interface
+  hardware_interface
+  rclcpp
+  rclcpp_lifecycle
+  realtime_tools
+  std_msgs
+)
 ament_export_include_directories(
   include
 )
 ament_export_libraries(
-    extruder_controller
+  extruder_stepper_velocity_controller
 )
-ament_export_dependencies(
-  controller_interface
-  hardware_interface
-  pluginlib
-  rclcpp
-  rclcpp_lifecycle
-  interfaces
-  lib
-  ${THIS_PACKAGE_INCLUDE_DEPENDS}
-)
+
+if(BUILD_TESTING)
+  find_package(ament_cmake_gtest REQUIRED)
+  find_package(ament_lint_auto REQUIRED)
+  ament_lint_auto_find_test_dependencies()
+endif()
+
 ament_package()

@@ -1,7 +1,0 @@
-<library path="extruder_controller">
-  <class name="extruder_controller/ExtruderController" type="extruder_controller::ExtruderController" base_class_type="controller_interface::ChainableControllerInterface">
-    <description>
-        Extruder  Controller
-    </description>
-  </class>
-</library>

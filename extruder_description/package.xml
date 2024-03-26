@@ -11,7 +11,10 @@
 
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>
-
+  <exec_depend>ethercat_driver</exec_depend>
+  <exec_depend>ethercat_interface</exec_depend>
+  <exec_depend>ethercat_generic_slave</exec_depend>
+  
   <exec_depend>xacro</exec_depend>
   <!-- <exec_depend>urdf</exec_depend> -->
 
