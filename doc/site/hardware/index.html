@@ -58,11 +58,19 @@
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#controle-du-moteur-pas-a-pas">Contrôle du moteur pas-à-pas</a>
     </li>
+    <li class="toctree-l3"><a class="reference internal" href="#bonnes-pratiques">Bonnes pratiques</a>
+    </li>
         </ul>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#bonnes-pratiques">Bonnes pratiques</a>
-    </li>
     <li class="toctree-l2"><a class="reference internal" href="#ethercat-modules">EtherCAT modules</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#module-ek1100">Module EK1100</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#module-el7031">Module EL7031</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#cablage">Câblage</a>
     </li>
     </ul>
                 </li>
@@ -122,7 +130,8 @@ Le système est conçu pour minimiser les pulsations et assurer une distribution
 <li>Plage de débit : max volume flow 6 ml/min (dépend de la viscosité de la maitère et de la pression en entréeà</li>
 <li>Précision de dosage : min dosing quantity (ml at 1/12 rotation) 0.004 (mais dépend de la matière)</li>
 <li>Matériaux compatibles : Silicone Monocomposant RTV Wurth Pro A8</li>
-<li>Température de fonctionnement (température ambiante) : +10°C à +50°C</li>
+<li>Température de fonctionnement (température ambiante) : +10°C à +50°C
+La documentation complète de la tête d'extrusion est disponible <a href="../datasheet/Vipro-HEAD3_5_manuel.pdf">ICI</a></li>
 </ul>
 <h3 id="controle-du-moteur-pas-a-pas">Contrôle du moteur pas-à-pas</h3>
 <p>Un moteur pas à pas est un dispositif électromagnétique qui se déplace par étapes discrètes. 
@@ -143,17 +152,23 @@ Il existe plusieurs configurations possibles :</p>
 <li>voire 1/32  32 micropas de l'étage par pas physique.</li>
 </ul>
 <p>Le nombre de micropas total par tour vaut le nombre pas physiques du moteur mutliplié par le mode micropas. </p>
-<p><strong>Commande du moteur pas-à-pas de la viproHEAD 5/5</strong></p>
+<p><strong>Contrôle du débit  de la viproHEAD 5/5</strong></p>
 <ul>
-<li>Le moteur permet de faire $) N_p= 200 $ pas physique en un tour</li>
-<li>Il est équipé d'un réducteur  de rapport de réduction $ r=1/12 $
-l'unité de motorisation permet de faire 2400 pas physique par tour. En programmant, le contrôleur du moteur pas-à-pas en "micro-stepping" en mode 1/16, 
-on peut ainsi atteindre 38400 pas par tour, ce qui nous fait théoriquement 0,009375°/pas.</li>
+<li>Le moteur permet de faire <span class="arithmatex">\(N_p= 200\)</span> pas physique en un tour</li>
+<li>Il est équipé d'un réducteur  de rapport de réduction <span class="arithmatex">\(r=1/12\)</span></li>
+<li>En sortie de réducteur, nous obtenons <span class="arithmatex">\(N_v = \frac{N_p}{r} = 2400\)</span> pas physique par tour.</li>
+<li>Sachant que nous contrôlons le moteur en micro-stepping avec un mode 1/16, nous aurons alors <span class="arithmatex">\(N = 16 N_v = 38400\)</span> pas par tour, ce qui peut également se traduire par une résolution <span class="arithmatex">\(0.009375\)</span> <span class="arithmatex">\(°\)</span>/pas</li>
 </ul>
-<p>En 1735, Leonhard Euler résout le <strong>problème de Bâle</strong> en établissant la formule suivante :</p>
-<p><span class="arithmatex">\(\sum\limits_{k\in\mathbb N^*} \frac 1 {k^2} = \frac {\pi^2}6\)</span></p>
-<p>Cependant, il ne démontrera rigoureusement son résultat qu’en 1741.</p>
-<h2 id="bonnes-pratiques">Bonnes pratiques</h2>
+<p>D'après la documentation technique de la tête d'extrusion, le volume dosé donné est <span class="arithmatex">\(V_d = 0.05\)</span> mL/tour, ce qui nous permet de connaître le volume dosé par pas : <span class="arithmatex">\(\eta =\frac{V_d}{N} = \frac{0.05}{38400} = 1.3 \cdot 10^{-6}\)</span> mL/pas. (ce qui est équivalent à <span class="arithmatex">\(\eta = 1.3 \cdot 10^{-12}\)</span> m<span class="arithmatex">\(^3\)</span> par pas)</p>
+<p>Sachant que la vitesse de rotation du moteur est donnée par <span class="arithmatex">\(\Omega_m\)</span> en tour/min, on peut en déduire le débit en sortie d'extrudeur : <span class="arithmatex">\(Q_{ext} = \Omega_m \eta\)</span></p>
+<p>En générale, dans le cadre de l'impression 3D, une filière est placée à la sortie de l'extrudeur. Cette filière se caractérise par une longueur <span class="arithmatex">\(L_f\)</span>, une forme géométrique interne (conique, aiguille, cylindirique), et un diamètre de sortie <span class="arithmatex">\(d_o\)</span>. Si l'on considère que le fluide s'écoule à travers cette filière sans perte de charge, c'est à dire que nous avons conservation du débit, alors on peut en déduire la vitesse d'écoulement du fluide, <span class="arithmatex">\(V_{fluide}\)</span>, à partir de l'expression suivante : <span class="arithmatex">\(Q_{ext} = V_{fluide} S_o\)</span>, sachant que <span class="arithmatex">\(S_o\)</span> est la section de la sortie de la filière (si on considère l'orificie de sortie circulaire alors <span class="arithmatex">\(S_o=\pi \frac{d_o^2}{4}\)</span>). On a alors </p>
+<p><span class="arithmatex">\(V_{fluide} = \frac{4 \Omega_m V_d }{\pi N d_o^2}\)</span></p>
+<p>Cette expression ne tient pas compte du gonflement en sortie de filière. Théoriquement, si on souhaite déposer un cordon de silicone d'un diamètre équivalent à celui de l'orifice de sortie de la buse, alors il faudra que la buse se déplace à une vitesse de <span class="arithmatex">\(V_{fluide}\)</span>.</p>
+<ul>
+<li>Remarques *</li>
+<li>Que cherchons nous à contrôler ? le débit à la sortie de la filière </li>
+</ul>
+<h3 id="bonnes-pratiques">Bonnes pratiques</h3>
 <p>Pour garantir des performances optimales de la tête d'impression ViproHEAD 5/5, il est recommandé de suivre les meilleures pratiques suivantes :</p>
 <ul>
 <li>Nettoyer régulièrement la tête d'impression pour éviter l'accumulation de résidus</li>
@@ -161,6 +176,14 @@ on peut ainsi atteindre 38400 pas par tour, ce qui nous fait théoriquement 0,00
 <li>Suivre les procédures de calibration pour assurer la précision du dosage</li>
 </ul>
 <h2 id="ethercat-modules">EtherCAT modules</h2>
+<h3 id="module-ek1100">Module EK1100</h3>
+<p>Le module EK1100, développé par Beckhoff Automation, est un coupleur EtherCAT, permettant de connecter des modules esclaves EtherCAT à une réseau EtherCAT. 
+C'est un module allimenté en 24V, que l'on peut connecté à un ordinateur contenant la pile EtherCAT de communication via un câble Ethernet. 
+La documentation technique est disponible <a href="../datasheet/ek110x_ek15xxen.pdf">ICI</a>.</p>
+<h3 id="module-el7031">Module EL7031</h3>
+<p>Le module EL7031, développé par Beckhoff Automation, est une interface permettant de contrôler d'un moteur pas-à-pas, EL7031 (la documentation technique est accessible directement <a href="../datasheet/el70x1en.pdf">ICI</a>.
+Les étages de sortie PWM pour deux bobines de moteur se trouvent dans le terminal EtherCAT, ainsi que deux entrées pour les interrupteurs de fin de course. Le EL7031 peut être adapté au moteur et à l'application en modifiant seulement quelques paramètres. Le micro-pas 64 fois assure un fonctionnement particulièrement silencieux et précis du moteur.</p>
+<h2 id="cablage">Câblage</h2>
               
             </div>
           </div><footer>
