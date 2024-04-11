@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Hardware - ROSControl ViproHEAD 5/5 Controller</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Hardware";
+        var mkdocs_page_input_path = "hardware.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> ROSControl ViproHEAD 5/5 Controller
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Hardware</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#hardware-description">Hardware description</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#extruder-viprohead-55-from-viscotec">Extruder : ViproHEAD 5/5 from Viscotec</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#caracteristiques">Caractéristiques</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#fonctionnement">Fonctionnement</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#specifications-techniques">Spécifications techniques</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#controle-du-moteur-pas-a-pas">Contrôle du moteur pas-à-pas</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#bonnes-pratiques">Bonnes pratiques</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#ethercat-modules">EtherCAT modules</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#module-ek1100">Module EK1100</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#module-el7031">Module EL7031</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#cablage">Câblage</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../about/">About</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">ROSControl ViproHEAD 5/5 Controller</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Hardware</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="hardware-specification">Hardware specification</h1>
+<h2 id="hardware-description">Hardware description</h2>
+<p>Composition du dispositif expérimental :</p>
+<ul>
+<li>ViproHEAD 5 (fabriquant Viscotec) : tête d'impression 3D permettant de faire du micro-dosage de fluide monomatériaux</li>
+<li>EK1100 (fabriquant Beckhoff) : module de couplage EtherCAT</li>
+<li>EL7031 (fabriquant Beckhoff) : module de commande moteur pas-à-pas EL7031</li>
+</ul>
+<h2 id="extruder-viprohead-55-from-viscotec">Extruder : ViproHEAD 5/5 from Viscotec</h2>
+<p>La tête d'impression ViproHEAD 5/5 est un composant clé du système de dosage Viscotec, conçu pour offrir des performances de dosage précises et 
+fiables dans une variété d'applications industrielles. 
+Cette documentation vise à fournir une vue d'ensemble complète de la tête d'impression, 
+y compris ses caractéristiques, son fonctionnement, ses spécifications techniques et les meilleures pratiques pour son utilisation.</p>
+<h3 id="caracteristiques">Caractéristiques</h3>
+<p>La tête d'impression ViproHEAD 5/5 présente les caractéristiques suivantes :
+* Technologie de dosage avancée pour une précision et une reproductibilité élevées
+* Conception modulaire pour une maintenance facile et une polyvalence d'application
+* Capacité à traiter une large gamme de fluides, y compris les fluides visqueux et abrasifs
+* Intégration transparente avec les systèmes de dosage Viscotec pour une efficacité maximale</p>
+<h3 id="fonctionnement">Fonctionnement</h3>
+<p>La tête d'impression utilise un mécanisme de dosage basé sur une pompe à cavitation progressive contrôler par un moteur pas-à-pas, 
+qui permet un contrôle précis du débit et du volume de fluide dispensé. 
+Le système est conçu pour minimiser les pulsations et assurer une distribution uniforme du fluide, même dans des conditions de dosage exigeantes.</p>
+<h3 id="specifications-techniques">Spécifications techniques</h3>
+<ul>
+<li>Plage de débit : max volume flow 6 ml/min (dépend de la viscosité de la maitère et de la pression en entréeà</li>
+<li>Précision de dosage : min dosing quantity (ml at 1/12 rotation) 0.004 (mais dépend de la matière)</li>
+<li>Matériaux compatibles : Silicone Monocomposant RTV Wurth Pro A8</li>
+<li>Température de fonctionnement (température ambiante) : +10°C à +50°C
+La documentation complète de la tête d'extrusion est disponible <a href="../datasheet/Vipro-HEAD3_5_manuel.pdf">ICI</a></li>
+</ul>
+<h3 id="controle-du-moteur-pas-a-pas">Contrôle du moteur pas-à-pas</h3>
+<p>Un moteur pas à pas est un dispositif électromagnétique qui se déplace par étapes discrètes. 
+Il a plusieurs bobines qui sont organisées en phases. 
+Lorsque chaque phase est mise sous tension à tour de rôle, le moteur marche. 
+Avec les moteurs pas à pas, vous pouvez obtenir un positionnement précis et un contrôle de vitesse. 
+Il existe trois principales façons de conduire un moteur pas à pas : full step drive, half-step drive et microstepping.
+Il est impératif de sélectionner le bon moteur pas à pas pour vos exigences de vitesse et de couple en fonction de données telles que la taille du cadre, l’angle d’étape, le couple de maintien, le courant nominal, le nombre de fils, et unipolaire ou bipolaire.</p>
+<p>Dans le cas du moteur de la tête d'extrusion ViproHEAD 5/5, le moteur pas-à-pas utilisé peut fonctionner en micro-stepping. La technique du micro-stepping consiste à créer des pas supplémentaires entre les pas physiques d'un moteur pas à pas. 
+En clair, l'étage va ajouter des pas intermédiaires que l'on appellera micropas.
+Il existe plusieurs configurations possibles :</p>
+<ul>
+<li>1  1 pas de l'étage = 1 pas physique. On appelle çà le mode fullstep</li>
+<li>1/2  2 micropas de l'étage par pas physique.</li>
+<li>1/4  4 micropas de l'étage par pas physique.</li>
+<li>1/8  8 micropas de l'étage par pas physique.</li>
+<li>1/16  16 micropas de l'étage par pas physique.</li>
+<li>voire 1/32  32 micropas de l'étage par pas physique.</li>
+</ul>
+<p>Le nombre de micropas total par tour vaut le nombre pas physiques du moteur mutliplié par le mode micropas. </p>
+<p><strong>Contrôle du débit  de la viproHEAD 5/5</strong></p>
+<ul>
+<li>Le moteur permet de faire <span class="arithmatex">\(N_p= 200\)</span> pas physique en un tour</li>
+<li>Il est équipé d'un réducteur  de rapport de réduction <span class="arithmatex">\(r=1/12\)</span></li>
+<li>En sortie de réducteur, nous obtenons <span class="arithmatex">\(N_v = \frac{N_p}{r} = 2400\)</span> pas physique par tour.</li>
+<li>Sachant que nous contrôlons le moteur en micro-stepping avec un mode 1/16, nous aurons alors <span class="arithmatex">\(N = 16 N_v = 38400\)</span> pas par tour, ce qui peut également se traduire par une résolution <span class="arithmatex">\(0.009375\)</span> <span class="arithmatex">\(°\)</span>/pas</li>
+</ul>
+<p>D'après la documentation technique de la tête d'extrusion, le volume dosé donné est <span class="arithmatex">\(V_d = 0.05\)</span> mL/tour, ce qui nous permet de connaître le volume dosé par pas : <span class="arithmatex">\(\eta =\frac{V_d}{N} = \frac{0.05}{38400} = 1.3 \cdot 10^{-6}\)</span> mL/pas. (ce qui est équivalent à <span class="arithmatex">\(\eta = 1.3 \cdot 10^{-12}\)</span> m<span class="arithmatex">\(^3\)</span> par pas)</p>
+<p>Sachant que la vitesse de rotation du moteur est donnée par <span class="arithmatex">\(\Omega_m\)</span> en tour/min, on peut en déduire le débit en sortie d'extrudeur : <span class="arithmatex">\(Q_{ext} = \Omega_m \eta\)</span></p>
+<p>En générale, dans le cadre de l'impression 3D, une filière est placée à la sortie de l'extrudeur. Cette filière se caractérise par une longueur <span class="arithmatex">\(L_f\)</span>, une forme géométrique interne (conique, aiguille, cylindirique), et un diamètre de sortie <span class="arithmatex">\(d_o\)</span>. Si l'on considère que le fluide s'écoule à travers cette filière sans perte de charge, c'est à dire que nous avons conservation du débit, alors on peut en déduire la vitesse d'écoulement du fluide, <span class="arithmatex">\(V_{fluide}\)</span>, à partir de l'expression suivante : <span class="arithmatex">\(Q_{ext} = V_{fluide} S_o\)</span>, sachant que <span class="arithmatex">\(S_o\)</span> est la section de la sortie de la filière (si on considère l'orificie de sortie circulaire alors <span class="arithmatex">\(S_o=\pi \frac{d_o^2}{4}\)</span>). On a alors </p>
+<p><span class="arithmatex">\(V_{fluide} = \frac{4 \Omega_m V_d }{\pi N d_o^2}\)</span></p>
+<p>Cette expression ne tient pas compte du gonflement en sortie de filière. Théoriquement, si on souhaite déposer un cordon de silicone d'un diamètre équivalent à celui de l'orifice de sortie de la buse, alors il faudra que la buse se déplace à une vitesse de <span class="arithmatex">\(V_{fluide}\)</span>.</p>
+<ul>
+<li>Remarques *</li>
+<li>Que cherchons nous à contrôler ? le débit à la sortie de la filière </li>
+</ul>
+<h3 id="bonnes-pratiques">Bonnes pratiques</h3>
+<p>Pour garantir des performances optimales de la tête d'impression ViproHEAD 5/5, il est recommandé de suivre les meilleures pratiques suivantes :</p>
+<ul>
+<li>Nettoyer régulièrement la tête d'impression pour éviter l'accumulation de résidus</li>
+<li>Vérifier et entretenir les composants clés conformément aux recommandations du fabricant</li>
+<li>Suivre les procédures de calibration pour assurer la précision du dosage</li>
+</ul>
+<h2 id="ethercat-modules">EtherCAT modules</h2>
+<h3 id="module-ek1100">Module EK1100</h3>
+<p>Le module EK1100, développé par Beckhoff Automation, est un coupleur EtherCAT, permettant de connecter des modules esclaves EtherCAT à une réseau EtherCAT. 
+C'est un module allimenté en 24V, que l'on peut connecté à un ordinateur contenant la pile EtherCAT de communication via un câble Ethernet. 
+La documentation technique est disponible <a href="../datasheet/ek110x_ek15xxen.pdf">ICI</a>.</p>
+<h3 id="module-el7031">Module EL7031</h3>
+<p>Le module EL7031, développé par Beckhoff Automation, est une interface permettant de contrôler d'un moteur pas-à-pas, EL7031 (la documentation technique est accessible directement <a href="../datasheet/el70x1en.pdf">ICI</a>.
+Les étages de sortie PWM pour deux bobines de moteur se trouvent dans le terminal EtherCAT, ainsi que deux entrées pour les interrupteurs de fin de course. Le EL7031 peut être adapté au moteur et à l'application en modifiant seulement quelques paramètres. Le micro-pas 64 fois assure un fonctionnement particulièrement silencieux et précis du moteur.</p>
+<h2 id="cablage">Câblage</h2>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href=".." class="btn btn-neutral float-left" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../about/" class="btn btn-neutral float-right" title="About">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href=".." style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../about/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../javascripts/mathjax.js"></script>
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
