@@ -21,7 +21,6 @@ Pour cela nous recommandons d'utiliser le package Debian [ICI](complement/code_1
       sudo apt install python3-poetry
       sudo apt update
       sudo apt upgrade
-
       
 ### Installation de ethercat_ros2_driver pour Jazzy
 
